@@ -1,14 +1,53 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `desarrollador web en bolivia`,
     author: {
-      name: ``,
+      name: `tomas vasquez`,
       summary: `who lives and works in San Francisco building useful things.`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    siteUrl: `https://desarrolladorwebenbolivia/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `tomasdetloging`,
+    },
+    banner: {
+      FirstName: "Tomás",
+      MiddleName: "",
+      LastName: "Vasquez",
+      devDesc:
+        "| Engineer | Programmer | Web Developer | Photographer | Athlete | Artist ",
+      icons: [
+        {
+          id: 0,
+          image: "fa-github",
+          url: "https://github.com/hashirshoaeb",
+          style: "socialicons",
+        },
+        {
+          id: 1,
+          image: "fa-facebook",
+          url: "https://www.facebook.com/hashirshoaeb",
+          style: "socialicons",
+        },
+        {
+          id: 2,
+          image: "fa-instagram",
+          url: "https://www.instagram.com/hashirshoaeb/",
+          style: "socialicons",
+        },
+        {
+          id: 3,
+          image: "fa-linkedin",
+          url: "https://www.linkedin.com/in/hashirshoaeb/",
+          style: "socialicons",
+        },
+        {
+          id: 4,
+          image: "fa-twitter",
+          url: "https://www.twitter.com/hashirshoaeb/",
+          style: "socialicons",
+        },
+      ],
     },
   },
   plugins: [
@@ -70,14 +109,14 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-typography`,
+    //   options: {
+    //     pathToConfigModule: `src/utils/typography`,
+    //   },
+    // },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};
