@@ -20,32 +20,32 @@ module.exports = {
         {
           id: 0,
           image: "fa-github",
-          url: "https://github.com/hashirshoaeb",
-          style: "socialicons",
+          url: "https://github.com/tomasdetloging",
         },
         {
-          id: 1,
-          image: "fa-facebook",
-          url: "https://www.facebook.com/hashirshoaeb",
-          style: "socialicons",
+          id: 356,
+          image: "fa-youtube",
+          url: "https://www.facebook.com/tomasdetloging",
+        },
+        // {
+        //   id: 1,
+        //   image: "fa-facebook",
+        //   url: "https://www.facebook.com/tomasdetloging",
+        // },
+        {
+          id: 3,
+          image: "fa-linkedin",
+          url: "https://www.linkedin.com/in/tomasdetloging/",
         },
         {
           id: 2,
           image: "fa-instagram",
-          url: "https://www.instagram.com/hashirshoaeb/",
-          style: "socialicons",
-        },
-        {
-          id: 3,
-          image: "fa-linkedin",
-          url: "https://www.linkedin.com/in/hashirshoaeb/",
-          style: "socialicons",
+          url: "https://www.instagram.com/tomasdetloging/",
         },
         {
           id: 4,
           image: "fa-twitter",
-          url: "https://www.twitter.com/hashirshoaeb/",
-          style: "socialicons",
+          url: "https://www.twitter.com/tomasdetloging/",
         },
       ],
     },
@@ -54,6 +54,24 @@ module.exports = {
       aboutDescription:
         "I'm Software Engineer, Bolivian with 3+ years of experience in web development. I’m currently the Vice President of student body at Emerging Technologies Research Lab(ETL) and a former Intern at RiseTech. I'm passionate about teaching machines how to think",
       picUrl: "https://github/tomasdetloging.png",
+    },
+    skills: {
+      skillsHeading: "Skills",
+      hardSkills: [
+        { name: "react", value: 90, icon: "fab fa-react", color: "blue" },
+        { name: "angular", value: 70, icon: "fab fa-angular", color: "red" },
+        { name: "vue", value: 50, icon: "fab fa-vuejs", color: "green" },
+        {
+          name: "bootstrap",
+          value: 90,
+          icon: "fab fa-bootstrap",
+          color: "#fff",
+        },
+      ],
+      softSkills: [
+        { name: "timeliness", value: 60, icon: "fa fa-clock", color: "blue" },
+        { name: "leaderess", value: 70, icon: "fa fa-user", color: "red" },
+      ],
     },
     footer: {
       location: "Barrio Estacion Argentina  # 456 \n - Santa Cruz - Bolivia",

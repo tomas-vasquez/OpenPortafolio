@@ -15,7 +15,6 @@ const Banner = () => {
             icons {
               id
               image
-              style
               url
             }
           }

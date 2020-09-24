@@ -19,8 +19,8 @@ export default class ContactMe extends Component {
             <div className="col-lg-8 mx-auto">
               <form id="contactForm" name="sentMessage" novalidate="novalidate">
                 <div className="control-group">
-                  <div className="form-group floating-label-form-group controls mb-0 pb-2">
-                    <label>Name</label>
+                  <div className="form-group floating-p-form-group controls mb-0 pb-2">
+                    <p>Name</p>
                     <input
                       className="form-control"
                       id="name"
@@ -33,8 +33,8 @@ export default class ContactMe extends Component {
                   </div>
                 </div>
                 <div className="control-group">
-                  <div className="form-group floating-label-form-group controls mb-0 pb-2">
-                    <label>Email Address</label>
+                  <div className="form-group floating-p-form-group controls mb-0 pb-2">
+                    <p>Email Address</p>
                     <input
                       className="form-control"
                       id="email"
@@ -47,8 +47,8 @@ export default class ContactMe extends Component {
                   </div>
                 </div>
                 <div className="control-group">
-                  <div className="form-group floating-label-form-group controls mb-0 pb-2">
-                    <label>Phone Number</label>
+                  <div className="form-group floating-p-form-group controls mb-0 pb-2">
+                    <p>Phone Number</p>
                     <input
                       className="form-control"
                       id="phone"
@@ -61,8 +61,8 @@ export default class ContactMe extends Component {
                   </div>
                 </div>
                 <div className="control-group">
-                  <div className="form-group floating-label-form-group controls mb-0 pb-2">
-                    <label>Message</label>
+                  <div className="form-group floating-p-form-group controls mb-0 pb-2">
+                    <p>Message</p>
                     <textarea
                       className="form-control"
                       id="message"
