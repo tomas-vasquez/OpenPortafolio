@@ -1,36 +1,59 @@
 import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
 
 export default function Footer() {
+  const data = useStaticQuery(graphql`
+    query FooterQuery {
+      site {
+        siteMetadata {
+          banner {
+            icons {
+              id
+              image
+              url
+            }
+          }
+          footer {
+            location
+          }
+        }
+      }
+    }
+  `);
+
+  const location = data.site.siteMetadata?.footer.location;
+  const icons = data.site.siteMetadata?.banner.icons;
+
   return (
     <>
-      <footer className="mt-5 text-center" style={{
-        backgroundColor: "#2c3e50",
-        color: "#fff"
-      }}>
+      <footer
+        className="py-5 mt-5 text-center"
+        style={{
+          backgroundColor: "#2c3e50",
+          color: "#fff",
+        }}
+      >
         <div className="container">
           <div className="row">
             <div className="col-6 col-lg-4">
               <h4 className="text-uppercase mb-4">Location</h4>
-              <p className="lead mb-0">
-                2215 John Daniel Drive
-                <br />
-                Clark, MO 65243
-              </p>
+              <p className="lead mb-0">{location}</p>
             </div>
             <div className="col-6 col-lg-4 ">
               <h4 className="text-uppercase mb-4">Around the Web</h4>
-              <a className="btn btn-outline-light btn-social mx-1" href="#!">
-                <i className="fa  fa-facebook"></i>
-              </a>
-              <a className="btn btn-outline-light btn-social mx-1" href="#!">
-                <i className="fa fa-twitter"></i>
-              </a>
-              <a className="btn btn-outline-light btn-social mx-1" href="#!">
-                <i className="fa fa-linkedin"></i>
-              </a>
-              <a className="btn btn-outline-light btn-social mx-1" href="#!">
-                <i className="fa fa-dribbble"></i>
-              </a>
+
+              {icons.map((icon) => (
+                <a
+                  key={icon.id}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={icon.url}
+                  aria-label={`My ${icon.image.split("-")[1]}`}
+                  className="btn btn-outline-light btn-social mx-1"
+                >
+                  <i className={`fab ${icon.image}`} />
+                </a>
+              ))}
             </div>
             <div className="d-none d-lg-block col-lg-4 mt-4 mt-lg-0">
               <h4 className="text-uppercase mb-4">About Freelancer</h4>

@@ -49,6 +49,9 @@ module.exports = {
         },
       ],
     },
+    footer: {
+      location: "Barrio Estacion Argentina  # 456 \n - Santa Cruz - Bolivia",
+    },
   },
   plugins: [
     {

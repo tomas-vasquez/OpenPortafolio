@@ -1,13 +1,20 @@
 import React from "react";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 
 import Bio from "../components/bio";
 
 import Navbar from "../components/Navbar";
 import Banner from "../components/Banner";
+import Portfolio from "../components/Portfolio";
+import AboutMe from "../components/AboutMe";
+import Skills from "../components/Skills";
+import ContactMe from "../components/ContactMe";
+import Footer from "../components/Footer";
+
 import Layout from "../components/layout";
+
 import SEO from "../components/seo";
-import { rhythm } from "../utils/typography";
+// import { rhythm } from "../utils/typography";
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`;
@@ -34,8 +41,13 @@ const BlogIndex = ({ data, location }) => {
       {/* <Bio /> */}
       <Navbar />
       <Banner />
+      <Portfolio />
+      <AboutMe />
+      <Skills />
+      <ContactMe />
+      <Footer />
 
-      {posts.map((post) => {
+      {/* {posts.map((post) => {
         const title = post.frontmatter.title || post.fields.slug;
         return (
           <article
@@ -69,7 +81,7 @@ const BlogIndex = ({ data, location }) => {
             </section>
           </article>
         );
-      })}
+      })} */}
     </Layout>
   );
 };

@@ -40,7 +40,7 @@ const Banner = () => {
           <div id="stars"></div>
           <div id="stars2"></div>
           <div className="container container-fluid text-center ">
-            <h1 className="display-3">
+            <h1 className="display-2">
               {FirstName + " " + MiddleName + " " + LastName}
             </h1>
             <Typist className="lead"> {devDesc}</Typist>
