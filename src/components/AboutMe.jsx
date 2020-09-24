@@ -1,14 +1,38 @@
 import React from "react";
-
-import { aboutHeading, aboutDescription, picUrl } from "../config";
+import { useStaticQuery, graphql } from "gatsby";
 
 export default function AboutMe() {
+  const data = useStaticQuery(graphql`
+    query AboutQuery {
+      site {
+        siteMetadata {
+          title
+          author {
+            name
+          }
+          about {
+            aboutDescription
+            aboutHeading
+            picUrl
+          }
+        }
+      }
+    }
+  `);
+
+  const title = data.site.siteMetadata?.title;
+  const author = data.site.siteMetadata?.author.name;
+  const aboutDescription = data.site.siteMetadata?.about.aboutDescription;
+  const aboutHeading = data.site.siteMetadata?.about.aboutHeading;
+  const picUrl = data.site.siteMetadata?.about.picUrl;
+
   return (
     <section
-      className="page-section bg-primary text-white mb-0"
+      className="page-section bg-primary text-white mb-0 jumbotron jumbotron-fluid bg-transparent bgstyle text-light "
       id="about"
-      style={{ backgroundColor: "#08b391" }}
+      style={{ backgroundColor: "#08b391", zIndex: 60 }}
     >
+      <div id="stars"></div>
       <div className="container">
         <h2 className="page-section-heading text-center text-uppercase text-white">
           {aboutHeading}
@@ -26,7 +50,7 @@ export default function AboutMe() {
               style={{ width: 200 }}
               className="mx-auto rounded-circle mb-4 mb-md-0"
               src={picUrl}
-              alt="profilepicture"
+              alt={`${title} - ${author}`}
             />
           </div>
           <div className="col-12 col-md-6 col-lg-8 my-auto">

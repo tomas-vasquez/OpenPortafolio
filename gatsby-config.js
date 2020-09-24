@@ -15,7 +15,7 @@ module.exports = {
       MiddleName: "",
       LastName: "Vasquez",
       devDesc:
-        "| Engineer | Programmer | Web Developer | Photographer | Athlete | Artist ",
+        "| Programmer | Web Developer | Photographer | Artist | Potterhead ",
       icons: [
         {
           id: 0,
@@ -48,6 +48,12 @@ module.exports = {
           style: "socialicons",
         },
       ],
+    },
+    about: {
+      aboutHeading: "About Me",
+      aboutDescription:
+        "I'm Software Engineer, Bolivian with 3+ years of experience in web development. I’m currently the Vice President of student body at Emerging Technologies Research Lab(ETL) and a former Intern at RiseTech. I'm passionate about teaching machines how to think",
+      picUrl: "https://github/tomasdetloging.png",
     },
     footer: {
       location: "Barrio Estacion Argentina  # 456 \n - Santa Cruz - Bolivia",

@@ -10691,13 +10691,12 @@ form .row:first-child .floating-label-form-group {
 .bgstyle {
   background: linear-gradient(
     136deg,
-    #1ad7c0,
+    #1ab1d7,
     #060a30,
     #6044ad,
-    #1f3a93,
+    #132663,
     #050831,
-    #08031aef,
-    #000000
+    #08031aef
   );
   /* background: linear-gradient(136deg, #02080f, #0d5cb6, #0acafa, #9b59b6); */
 
