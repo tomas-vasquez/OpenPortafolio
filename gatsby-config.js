@@ -1,19 +1,19 @@
 module.exports = {
   siteMetadata: {
-    title: `desarrollador web en bolivia`,
+    title: `Desarrollador web en bolivia`,
     author: {
       name: `tomas vasquez`,
       summary: `who lives and works in San Francisco building useful things.`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://desarrolladorwebenbolivia/`,
+    siteUrl: `https://desarrollador-web-en-bolivia/`,
     social: {
       twitter: `tomasdetloging`,
     },
     banner: {
       FirstName: "Tomás",
       MiddleName: "",
-      LastName: "Vasquez",
+      LastName: "Vásquez",
       devDesc:
         "| Programmer | Web Developer | Photographer | Artist | Potterhead ",
       icons: [
@@ -58,19 +58,31 @@ module.exports = {
     skills: {
       skillsHeading: "Skills",
       hardSkills: [
-        { name: "react", value: 90, icon: "fab fa-react", color: "blue" },
-        { name: "angular", value: 70, icon: "fab fa-angular", color: "red" },
-        { name: "vue", value: 50, icon: "fab fa-vuejs", color: "green" },
+        { name: "React", value: 90, icon: "fab fa-react", color: "#3992e6" },
+        {
+          name: "Angular",
+          value: 70,
+          icon: "fab fa-angular",
+          color: "#d81010",
+        },
+        { name: "Vue", value: 50, icon: "fab fa-vuejs", color: "green" },
         {
           name: "bootstrap",
           value: 90,
           icon: "fab fa-bootstrap",
-          color: "#fff",
+          color: "violet",
         },
       ],
       softSkills: [
         { name: "timeliness", value: 60, icon: "fa fa-clock", color: "blue" },
         { name: "leaderess", value: 70, icon: "fa fa-user", color: "red" },
+      ],
+    },
+    portfolio: {
+      proyects: [
+        { imgUrl: "portafolio.jpg", githubUrl: "git.ccom/dwe" },
+        { imgUrl: "academy.jpg", githubUrl: "git.ccom/dwe" },
+        { imgUrl: "academyAdmin.jpg", githubUrl: "git.ccom/dwe" },
       ],
     },
     footer: {
@@ -90,6 +102,13 @@ module.exports = {
       options: {
         path: `${__dirname}/content/assets`,
         name: `assets`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/portfolio`,
+        name: `portfolio`,
       },
     },
     {
@@ -136,12 +155,12 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
-    // {
-    //   resolve: `gatsby-plugin-typography`,
-    //   options: {
-    //     pathToConfigModule: `src/utils/typography`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

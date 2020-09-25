@@ -1,9 +1,17 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
+import Image from "gatsby-image";
 
 export default function AboutMe() {
   const data = useStaticQuery(graphql`
     query AboutQuery {
+      avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+        childImageSharp {
+          fixed(width: 190, height: 190) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
       site {
         siteMetadata {
           title
@@ -24,13 +32,12 @@ export default function AboutMe() {
   const author = data.site.siteMetadata?.author.name;
   const aboutDescription = data.site.siteMetadata?.about.aboutDescription;
   const aboutHeading = data.site.siteMetadata?.about.aboutHeading;
-  const picUrl = data.site.siteMetadata?.about.picUrl;
+  const avatar = data?.avatar?.childImageSharp?.fixed;
 
   return (
     <section
       className="page-section bg-primary text-white mb-0 jumbotron jumbotron-fluid bg-transparent bgstyle text-light "
       id="about"
-      style={{ backgroundColor: "#08b391", zIndex: 60 }}
     >
       <div id="stars"></div>
       <div className="container">
@@ -46,11 +53,10 @@ export default function AboutMe() {
         </div>
         <div className="row">
           <div className="col-12 col-md-6 col-lg-4 d-flex">
-            <img
-              style={{ width: 200 }}
-              className="mx-auto rounded-circle mb-4 mb-md-0"
-              src={picUrl}
+            <Image
+              fixed={avatar}
               alt={`${title} - ${author}`}
+              className="mx-auto rounded-circle mb-4 mb-md-0"
             />
           </div>
           <div className="col-12 col-md-6 col-lg-8 my-auto">

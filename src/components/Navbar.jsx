@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FirstName } from "../config";
+import { useStaticQuery, graphql, Link } from "gatsby";
 
 export default function Navbar() {
   const [isTop, setIsTop] = useState(true);
@@ -13,17 +13,31 @@ export default function Navbar() {
     });
   }, [isTop]);
 
+  const data = useStaticQuery(graphql`
+    query NavbarQuery {
+      site {
+        siteMetadata {
+          banner {
+            FirstName
+          }
+        }
+      }
+    }
+  `);
+
+  const FirstName = data.site.siteMetadata?.banner.FirstName;
+
   return (
     <nav
-      className={`navbar navbar-expand-lg fixed-top ${
-        isTop ? "navbar-dark" : "p-2 bg-secondary"
+      className={` navbar navbar-expand-lg fixed-top ${
+        isTop ? "p-2 navbar-dark" : "p-0 bg-secondary"
       } `}
       id="mainNav"
     >
       <div className="container ">
-        <a className="navbar-brand" href="#page-top">
+        <Link className="navbar-brand" to="/">
           {`<${FirstName} />`}
-        </a>
+        </Link>
 
         <button
           className="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"

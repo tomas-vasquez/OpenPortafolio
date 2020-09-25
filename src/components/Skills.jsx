@@ -32,15 +32,14 @@ const Skills = () => {
   const hardSkills = data.site.siteMetadata?.skills.hardSkills;
   const softSkills = data.site.siteMetadata?.skills.softSkills;
 
-  var skills = tab === "tab1" ? hardSkills : softSkills;
+  const skills = tab === "tab1" ? hardSkills : softSkills;
 
   return (
     <section
-      className="page-section text-white"
-      style={{
-        backgroundColor: "#051729",
-      }}
+      className="page-section bg-primary text-white mb-0 jumbotron jumbotron-fluid bg-transparent bgstyle text-light "
+      id="skills"
     >
+      <div id="stars"></div>
       <div className="container">
         <h2 className="page-section-heading text-center text-uppercase mb-0">
           {skillsHeading}
@@ -91,7 +90,7 @@ const Skills = () => {
               <div className="card-body pb-0">
                 <div className="row mb-0">
                   {skills.map((skill, key) => (
-                    <Fragment key={key}>
+                    <Fragment key={`${skill.icon}`}>
                       <div className="col-6 col-sm-4 col-lg-3">
                         <p className="lead">
                           <i
