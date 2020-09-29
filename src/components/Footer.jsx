@@ -35,13 +35,12 @@ export default function Footer() {
       >
         <div className="container">
           <div className="row">
-            <div className="col-6 col-lg-4">
+            <div className="col-12 col-md-6 col-xl-4">
               <h4 className="text-uppercase mb-4">Location</h4>
               <p className="lead mb-0">{location}</p>
             </div>
-            <div className="col-6 col-lg-4 ">
+            <div className="col-12 col-md-6 col-xl-4 mt-5 mt-md-0">
               <h4 className="text-uppercase mb-4">Around the Web</h4>
-
               {icons.map((icon) => (
                 <a
                   key={icon.id}
@@ -55,12 +54,11 @@ export default function Footer() {
                 </a>
               ))}
             </div>
-            <div className="d-none d-lg-block col-lg-4 mt-4 mt-lg-0">
+            <div className="d-none d-xl-block col-xl-4">
               <h4 className="text-uppercase mb-4">About Freelancer</h4>
               <p className="lead mb-0">
                 Freelance is a free to use, MIT licensed Bootstrap theme created
-                by
-                <a href="http://startbootstrap.com">Start Bootstrap</a>.
+                by <a href="http://startbootstrap.com">Start Bootstrap</a>.
               </p>
             </div>
           </div>
