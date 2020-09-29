@@ -1,16 +1,16 @@
 import React from "react";
 import { graphql } from "gatsby";
 
-import Bio from "../components/bio";
+import Bio from "../components/common/bio";
 
-import Portfolio from "../components/Portfolio";
-import AboutMe from "../components/AboutMe";
-import Skills from "../components/Skills";
-import ContactMe from "../components/ContactMe";
-import Courses from "../components/Courses";
+import Portfolio from "../components/landing/Portfolio";
+import AboutMe from "../components/landing/AboutMe";
+import Skills from "../components/landing/Skills";
+import ContactMe from "../components/landing/ContactMe";
+import Courses from "../components/landing/Courses";
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Layout from "../components/common/layout";
+import SEO from "../components/common/seo";
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`;

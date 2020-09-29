@@ -1,17 +1,17 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import Banner from "../components/Banner";
-import Banner2 from "../components/Banner2";
-import Footer from "../components/Footer";
+import Navbar from "../theme/Navbar";
+import Intro from "../landing/Intro/defaultIntro";
+import Intro2 from "../landing/Intro/blogIntro";
+import Footer from "../theme/Footer";
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`;
   let Header;
 
   if (location.pathname === rootPath) {
-    Header = Banner;
+    Header = Intro;
   } else {
-    Header = Banner2;
+    Header = Intro2;
   }
 
   return (
