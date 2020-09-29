@@ -1,9 +1,11 @@
+import { Link } from "gatsby";
 import React, { useState, useEffect } from "react";
-
-import { useStaticQuery, graphql, Link } from "gatsby";
 
 // reactstrap components
 import { Collapse, Navbar, Container } from "reactstrap";
+
+//config
+import { banner } from "../../data/config";
 
 export default function MyNavbar() {
   const [isTop, setIsTop] = useState(true);
@@ -18,19 +20,7 @@ export default function MyNavbar() {
     });
   }, [isTop]);
 
-  const data = useStaticQuery(graphql`
-    query NavbarQuery {
-      site {
-        siteMetadata {
-          banner {
-            FirstName
-          }
-        }
-      }
-    }
-  `);
-
-  const FirstName = data.site.siteMetadata?.banner.FirstName;
+  const FirstName = banner.FirstName;
 
   return (
     <Container>

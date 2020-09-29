@@ -1,33 +1,15 @@
 import React from "react";
 import Typist from "react-typist";
-import { useStaticQuery, graphql } from "gatsby";
+
+//config
+import { banner } from "../../../data/config";
 
 const Banner = () => {
-  const data = useStaticQuery(graphql`
-    query BannerQuery {
-      site {
-        siteMetadata {
-          banner {
-            FirstName
-            MiddleName
-            LastName
-            devDesc
-            icons {
-              id
-              image
-              url
-            }
-          }
-        }
-      }
-    }
-  `);
-
-  const FirstName = data.site.siteMetadata?.banner.FirstName;
-  const LastName = data.site.siteMetadata?.banner.LastName;
-  const MiddleName = data.site.siteMetadata?.banner.MiddleName;
-  const devDesc = data.site.siteMetadata?.banner.devDesc;
-  const icons = data.site.siteMetadata?.banner.icons;
+  const FirstName = banner.FirstName;
+  const LastName = banner.LastName;
+  const MiddleName = banner.MiddleName;
+  const devDesc = banner.devDesc;
+  const icons = banner.icons;
 
   return (
     <>

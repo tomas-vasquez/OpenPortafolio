@@ -2,6 +2,9 @@ import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import PortafolioCard from "./PortafolioCard";
 
+//config
+import { portfolio } from "../../../data/config";
+
 export default function Portfolio() {
   const data = useStaticQuery(graphql`
     query portafolioQuery {
@@ -17,20 +20,10 @@ export default function Portfolio() {
           }
         }
       }
-      site(siteMetadata: {}) {
-        siteMetadata {
-          portfolio {
-            proyects {
-              imgUrl
-              githubUrl
-            }
-          }
-        }
-      }
     }
   `);
 
-  const proyects = data.site.siteMetadata?.portfolio.proyects;
+  const proyects = portfolio.proyects;
 
   return (
     <section className="page-section portfolio" id="portfolio">

@@ -1,28 +1,11 @@
 import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
+
+//config
+import { banner, footer } from "../../data/config";
 
 export default function Footer() {
-  const data = useStaticQuery(graphql`
-    query FooterQuery {
-      site {
-        siteMetadata {
-          banner {
-            icons {
-              id
-              image
-              url
-            }
-          }
-          footer {
-            location
-          }
-        }
-      }
-    }
-  `);
-
-  const location = data.site.siteMetadata?.footer.location;
-  const icons = data.site.siteMetadata?.banner.icons;
+  const location = footer.location;
+  const icons = banner.icons;
 
   return (
     <>

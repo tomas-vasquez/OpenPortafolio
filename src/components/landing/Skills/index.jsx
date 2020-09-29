@@ -1,36 +1,14 @@
 import React, { useState, Fragment } from "react";
-import { useStaticQuery, graphql } from "gatsby";
+
+//config
+import { mySkills } from "../../../data/config";
 
 const Skills = () => {
   const [tab, setTab] = useState("tab1");
 
-  const data = useStaticQuery(graphql`
-    query SkillsQuery {
-      site {
-        siteMetadata {
-          skills {
-            skillsHeading
-            hardSkills {
-              name
-              value
-              icon
-              color
-            }
-            softSkills {
-              name
-              value
-              icon
-              color
-            }
-          }
-        }
-      }
-    }
-  `);
-
-  const skillsHeading = data.site.siteMetadata?.skills.skillsHeading;
-  const hardSkills = data.site.siteMetadata?.skills.hardSkills;
-  const softSkills = data.site.siteMetadata?.skills.softSkills;
+  const skillsHeading = mySkills.skillsHeading;
+  const hardSkills = mySkills.hardSkills;
+  const softSkills = mySkills.softSkills;
 
   const skills = tab === "tab1" ? hardSkills : softSkills;
 

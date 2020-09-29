@@ -2,6 +2,9 @@ import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Image from "gatsby-image";
 
+//config
+import { about } from "../../../data/config";
+
 export default function AboutMe() {
   const data = useStaticQuery(graphql`
     query AboutQuery {
@@ -18,11 +21,6 @@ export default function AboutMe() {
           author {
             name
           }
-          about {
-            aboutDescription
-            aboutHeading
-            picUrl
-          }
         }
       }
     }
@@ -30,9 +28,10 @@ export default function AboutMe() {
 
   const title = data.site.siteMetadata?.title;
   const author = data.site.siteMetadata?.author.name;
-  const aboutDescription = data.site.siteMetadata?.about.aboutDescription;
-  const aboutHeading = data.site.siteMetadata?.about.aboutHeading;
   const avatar = data?.avatar?.childImageSharp?.fixed;
+
+  const aboutDescription = about.aboutDescription;
+  const aboutHeading = about.aboutHeading;
 
   return (
     <section
