@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <>
       <footer
-        className="py-5 mt-5 text-center"
+        className="py-5"
         style={{
           backgroundColor: "#2c3e50",
           color: "#fff",
