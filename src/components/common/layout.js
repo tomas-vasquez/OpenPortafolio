@@ -1,26 +1,28 @@
 import React from "react";
 
 import Particles from "./Particles";
+// import Header from "../theme/Header";
 import Navbar from "../theme/Navbar";
-import Intro from "../landing/Intro/defaultIntro";
-import Intro2 from "../landing/Intro/blogIntro";
+import defaultIntro from "../landing/Intro/defaultIntro";
+import blogIntro from "../landing/Intro/blogIntro";
 import Footer from "../theme/Footer";
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`;
-  let Header;
+  let Intro;
 
   if (location.pathname === rootPath) {
-    Header = Intro;
+    Intro = defaultIntro;
   } else {
-    Header = Intro2;
+    Intro = blogIntro;
   }
 
   return (
     <>
       <Particles />
       <Navbar />
-      <Header title={title} />
+      <Intro title={title} />
+
       <main>{children}</main>
       <Footer />
     </>
