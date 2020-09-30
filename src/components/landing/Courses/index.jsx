@@ -5,7 +5,7 @@ export default function Courses() {
     <section className="page-section bg-white Courses" id="courses">
       <div className="container">
         {/*Courses Section Heading*/}
-        <h2 className="page-section-heading text-center text-uppercase text-secondary mb-0">
+        <h2 className="display-4 mb-0 text-center text-uppercase text-secondary mb-0">
           Courses
         </h2>
         {/*Icon Divider*/}

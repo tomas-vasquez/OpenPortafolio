@@ -7,7 +7,7 @@ export default class ContactMe extends Component {
     return (
       <section className="page-section bg-white" id="contact">
         <div className="container">
-          <h2 className="page-section-heading text-center text-uppercase text-secondary mb-0">
+          <h2 className="display-4 mb-0 text-center text-uppercase text-secondary mb-0">
             Contact Me
           </h2>
           <div className="divider-custom">
@@ -18,16 +18,7 @@ export default class ContactMe extends Component {
             <div className="divider-custom-line"></div>
           </div>
           <div className="row d-flex">
-            <div className="col-12 col-md-6 col-lg-8 mx-auto">
-              <p
-                className="lead text-center"
-                style={{
-                  fontWeight: 400,
-                }}
-              >
-                afadfadfasd
-              </p>
-            </div>
+            {/* j */}
             <div className="col-lg-6 mx-auto pt-5">
               <ContactForm />
             </div>

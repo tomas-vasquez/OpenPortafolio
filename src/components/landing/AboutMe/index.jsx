@@ -36,7 +36,7 @@ export default function AboutMe() {
   return (
     <section className="page-section mb-0 bg-transparent text-light" id="about">
       <div className="container">
-        <h2 className="page-section-heading text-center text-uppercase">
+        <h2 className="display-4 mb-0 text-center text-uppercase">
           {aboutHeading}
         </h2>
         <div className="divider-custom divider-light">
@@ -65,7 +65,6 @@ export default function AboutMe() {
             </p>
           </div>
         </div>
-        <div className="text-center mt-4"></div>
       </div>
     </section>
   );

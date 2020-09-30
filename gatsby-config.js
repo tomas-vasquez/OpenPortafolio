@@ -4,6 +4,8 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 });
 
+const { githubApiQuery } = require("./github-api");
+
 module.exports = {
   siteMetadata: {
     title: config.defaultTitle,
@@ -82,8 +84,23 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-source-github-api`,
+      options: {
+        // default Github GraphQL v4 API endpoint
+        url: "https://api.github.com/graphql",
+
+        // token: required by the GitHub API
+        token: process.env.GITHUB_PERSONAL_ACCESS_TOKEN,
+
+        // GraphQLquery: defaults to a search query
+        graphQLQuery: githubApiQuery,
+
+        // variables: defaults to variables needed for a search query
+        variables: {
+          github_login: process.env.GITHUB_LOGIN,
+        },
+      },
+    },
   ],
 };

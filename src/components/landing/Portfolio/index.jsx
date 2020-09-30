@@ -24,12 +24,13 @@ export default function Portfolio() {
   `);
 
   const proyects = portfolio.proyects;
+  const portfolioHeading = portfolio.portfolioHeading;
 
   return (
     <section className="page-section bg-white portfolio" id="portfolio">
       <div className="container">
-        <h2 className="page-section-heading text-center text-uppercase text-secondary mb-0">
-          Portfolio
+        <h2 className="display-4 mb-0 text-center text-uppercase text-secondary mb-0">
+          {portfolioHeading}
         </h2>
         <div className="divider-custom">
           <div className="divider-custom-line"></div>

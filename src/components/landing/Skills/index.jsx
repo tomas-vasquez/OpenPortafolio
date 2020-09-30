@@ -1,25 +1,17 @@
 import React, { useState, Fragment } from "react";
 
 //config
-import { mySkills } from "../../../data/config";
+import { skills } from "../../../data/config";
 
 const Skills = () => {
-  const [tab, setTab] = useState("tab1");
-
-  const skillsHeading = mySkills.skillsHeading;
-  const hardSkills = mySkills.hardSkills;
-  const softSkills = mySkills.softSkills;
-
-  const skills = tab === "tab1" ? hardSkills : softSkills;
-
   return (
     <section
       className="page-section mb-0 bg-transparent text-light"
       id="skills"
     >
       <div className="container">
-        <h2 className="page-section-heading text-center text-uppercase mb-0">
-          {skillsHeading}
+        <h2 className="display-4 mb-0 text-center text-uppercase mb-0">
+          {skills.skillsHeading}
         </h2>
         <div className="divider-custom divider-light">
           <div className="divider-custom-line"></div>
@@ -31,42 +23,10 @@ const Skills = () => {
 
         <div className="row d-flex">
           <div className="col-12 col-md-10 col-lg-8 mx-auto">
-            <div className="d-flex my-2">
-              <button
-                className={`btn ${
-                  tab === "tab2" ? "btn-secondary" : "btn-primary"
-                } lead ml-auto mr-4`}
-                onClick={() => {
-                  setTab("tab1");
-                }}
-              >
-                <p
-                  className="lead text-uppercase mb-0"
-                  style={{ fontWeight: 400 }}
-                >
-                  hardSkills
-                </p>
-              </button>
-              <button
-                className={`btn ${
-                  tab === "tab1" ? "btn-secondary" : "btn-primary"
-                } mr-auto`}
-                onClick={() => {
-                  setTab("tab2");
-                }}
-              >
-                <p
-                  className="lead text-uppercase mb-0"
-                  style={{ fontWeight: 400 }}
-                >
-                  softSkills
-                </p>
-              </button>
-            </div>
             <div className="card text-secondary">
               <div className="card-body pb-0">
                 <div className="row mb-0">
-                  {skills.map((skill, key) => (
+                  {skills.mySkills.map((skill, key) => (
                     <Fragment key={`${skill.icon}`}>
                       <div className="col-6 col-sm-4 col-lg-3">
                         <p className="lead">

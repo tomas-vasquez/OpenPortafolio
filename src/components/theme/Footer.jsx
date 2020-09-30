@@ -9,20 +9,15 @@ export default function Footer() {
 
   return (
     <>
-      <footer
-        className="py-5 text-light"
-        style={{
-          backgroundColor: "#2c3e50",
-        }}
-      >
+      <footer className="py-5 text-light bg-trasparent">
         <div className="container">
           <div className="row">
             <div className="col-12 col-md-6 col-xl-4">
-              <h4 className="text-uppercase mb-4">Location</h4>
+              <h5 className="text-uppercase mb-4">Location</h5>
               <p className="lead mb-0">{location}</p>
             </div>
             <div className="col-12 col-md-6 col-xl-4 mt-5 mt-md-0">
-              <h4 className="text-uppercase mb-4">Around the Web</h4>
+              <h5 className="text-uppercase mb-4">Around the Web</h5>
               {icons.map((icon) => (
                 <a
                   key={icon.id}
@@ -37,16 +32,19 @@ export default function Footer() {
               ))}
             </div>
             <div className="d-none d-xl-block col-xl-4">
-              <h4 className="text-uppercase mb-4">About Freelancer</h4>
+              <h5 className="text-uppercase mb-4">About Laveggod Portfolio</h5>
               <p className="lead mb-0">
-                Freelance is a free to use, MIT licensed Bootstrap theme created
-                by <a href="http://startbootstrap.com">Start Bootstrap</a>.
+                Project code is open source. Feel free to{" "}
+                <a href="https://github/tomasdetloging/lavegood-portfolio">
+                  clone
+                </a>{" "}
+                and make your own version.
               </p>
             </div>
           </div>
         </div>
       </footer>
-      <div className="copyright py-4 text-center text-white">
+      <div className="pb-4 text-center text-white">
         <div className="container">
           made with <i className="fas fa-heart"></i> by{" "}
           <a
@@ -58,13 +56,9 @@ export default function Footer() {
             Tomi
           </a>{" "}
           using <i className="fab fa-react"></i>
-          {/* <p className="mb-0">
-            <small className="text-muted">
-              {" "}
-              Project code is open source. Feel free to fork and make your own
-              version.
-            </small>
-          </p> */}
+          <p className="mb-0">
+            <small className="text-muted"> </small>
+          </p>
         </div>
       </div>
     </>
