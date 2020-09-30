@@ -34,13 +34,9 @@ export default function AboutMe() {
   const aboutHeading = about.aboutHeading;
 
   return (
-    <section
-      className="page-section bg-primary text-white mb-0 jumbotron jumbotron-fluid bg-transparent bgstyle text-light "
-      id="about"
-    >
-      <div id="stars"></div>
+    <section className="page-section mb-0 bg-transparent text-light" id="about">
       <div className="container">
-        <h2 className="page-section-heading text-center text-uppercase text-white">
+        <h2 className="page-section-heading text-center text-uppercase">
           {aboutHeading}
         </h2>
         <div className="divider-custom divider-light">

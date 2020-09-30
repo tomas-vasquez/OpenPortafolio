@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Courses() {
   return (
-    <section className="page-section Courses" id="courses">
+    <section className="page-section bg-white Courses" id="courses">
       <div className="container">
         {/*Courses Section Heading*/}
         <h2 className="page-section-heading text-center text-uppercase text-secondary mb-0">

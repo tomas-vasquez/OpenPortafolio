@@ -1,4 +1,6 @@
 import React from "react";
+
+import Particles from "./Particles";
 import Navbar from "../theme/Navbar";
 import Intro from "../landing/Intro/defaultIntro";
 import Intro2 from "../landing/Intro/blogIntro";
@@ -16,6 +18,7 @@ const Layout = ({ location, title, children }) => {
 
   return (
     <>
+      <Particles />
       <Navbar />
       <Header title={title} />
       <main>{children}</main>

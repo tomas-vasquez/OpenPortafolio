@@ -26,7 +26,7 @@ export default function Portfolio() {
   const proyects = portfolio.proyects;
 
   return (
-    <section className="page-section portfolio" id="portfolio">
+    <section className="page-section bg-white portfolio" id="portfolio">
       <div className="container">
         <h2 className="page-section-heading text-center text-uppercase text-secondary mb-0">
           Portfolio
@@ -39,8 +39,9 @@ export default function Portfolio() {
           <div className="divider-custom-line"></div>
         </div>
         <div className="row">
-          {proyects.map((proyect) => (
+          {proyects.map((proyect, key) => (
             <PortafolioCard
+              key={key}
               proyect={proyect}
               image={
                 data.allFile.edges.find((edge) => {

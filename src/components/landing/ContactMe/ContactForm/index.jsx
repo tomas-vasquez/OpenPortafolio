@@ -117,7 +117,6 @@ export default () => (
         <Center>
           <button
             className="btn btn-primary"
-            secondary
             type="submit"
             disabled={isSubmitting}
           >

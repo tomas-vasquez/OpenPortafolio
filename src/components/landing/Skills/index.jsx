@@ -14,10 +14,9 @@ const Skills = () => {
 
   return (
     <section
-      className="page-section bg-primary text-white mb-0 jumbotron jumbotron-fluid bg-transparent bgstyle text-light "
+      className="page-section mb-0 bg-transparent text-light"
       id="skills"
     >
-      <div id="stars"></div>
       <div className="container">
         <h2 className="page-section-heading text-center text-uppercase mb-0">
           {skillsHeading}

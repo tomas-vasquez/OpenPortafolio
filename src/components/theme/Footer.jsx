@@ -10,10 +10,9 @@ export default function Footer() {
   return (
     <>
       <footer
-        className="py-5"
+        className="py-5 text-light"
         style={{
           backgroundColor: "#2c3e50",
-          color: "#fff",
         }}
       >
         <div className="container">

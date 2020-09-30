@@ -32,11 +32,13 @@
     "react-google-recaptcha": "^1.0.5",
     "react-helmet": "^5.2.0",
     "styled-components": "^4.1.3",
+    "react-particles-js": "^3.3.0",
     "react-typography": "^0.16.19",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75",
     "typography": "^0.16.19",
-    "typography-theme-wordpress-2016": "^0.16.19"
+    "typography-theme-wordpress-2016": "^0.16.19",
+    "yup": "^0.26.6"
   },
   "scripts": {
     "build": "gatsby build",
