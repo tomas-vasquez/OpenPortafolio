@@ -23,13 +23,13 @@ export default class particles extends Component {
             pauseOnBlur: true,
             particles: {
               number: {
-                value: 50,
+                value: 70,
               },
               size: {
                 value: 3,
               },
               opacity: {
-                value: 0.25,
+                value: 0.2,
               },
               line_linked: {
                 enable: true,

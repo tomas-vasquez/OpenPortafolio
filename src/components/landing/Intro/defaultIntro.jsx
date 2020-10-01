@@ -33,12 +33,12 @@ const Banner = () => {
                   href={icon.url}
                   aria-label={`My ${icon.image.split("-")[1]}`}
                 >
-                  <i className={`fab ${icon.image}  fa-3x`} />
+                  <i className={`${icon.image}  fa-3x`} />
                 </a>
               ))}
             </div>
             <a
-              className="btn btn-outline-light btn-lg"
+              className="btn btn-outline-light"
               href="#aboutme"
               role="button"
               aria-label="Learn more about me"

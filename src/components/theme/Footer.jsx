@@ -27,7 +27,7 @@ export default function Footer() {
                   aria-label={`My ${icon.image.split("-")[1]}`}
                   className="btn btn-outline-light btn-social mx-1"
                 >
-                  <i className={`fab ${icon.image}`} />
+                  <i className={`${icon.image}`} />
                 </a>
               ))}
             </div>

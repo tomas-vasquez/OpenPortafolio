@@ -1,10 +1,9 @@
 module.exports = {
-  defaultTitle: "John Doe",
+  defaultTitle: "Desarrollador web",
   defaultDescription:
-    "portafolio de proyectos de unn desarrollador programador web en de bolivia",
+    "portafolio de proyectos de un desarrollador programador web en de bolivia",
   author: {
     name: `tomas vasquez`,
-    summary: `who lives and works in San Francisco building useful things.`,
   },
   banner: {
     FirstName: "Tomás",
@@ -14,27 +13,27 @@ module.exports = {
     icons: [
       {
         id: 0,
-        image: "fa-github",
+        image: "fab fa-github",
         url: "https://github.com/tomasdetloging",
       },
       {
         id: 356,
-        image: "fa-youtube",
+        image: "fab fa-youtube",
         url: "https://www.facebook.com/tomasdetloging",
       },
       {
         id: 3,
-        image: "fa-linkedin",
+        image: "fab fa-linkedin",
         url: "https://www.linkedin.com/in/tomasdetloging/",
       },
       {
         id: 2,
-        image: "fa-instagram",
+        image: "fab fa-instagram",
         url: "https://www.instagram.com/tomasdetloging/",
       },
       {
         id: 4,
-        image: "fa-twitter",
+        image: "fab fa-twitter",
         url: "https://www.twitter.com/tomasdetloging/",
       },
     ],

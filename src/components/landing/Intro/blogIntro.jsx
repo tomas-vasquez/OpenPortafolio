@@ -6,12 +6,12 @@ const Banner = ({ title }) => {
       <div>
         <div
           id="home"
-          className="title jumbotron jumbotron-fluid bg-transparent bgstyle text-light d-flex align-content-center align-items-center flex-wrap m-0"
+          className="jumbotron bg-transparent text-light align-content-center m-0"
         >
           <div id="stars"></div>
           <div className="container container-fluid text-center ">
-            <h1 className="display-4 mt-3">{title}</h1>
-            <div className="divider-custom divider-light">
+            <h1 className="display-4 mt-3 mb-0">{title}</h1>
+            <div className="divider-custom divider-light mb-0">
               <div className="divider-custom-line"></div>
               <div className="divider-custom-icon">
                 <i className="fas fa-star"></i>

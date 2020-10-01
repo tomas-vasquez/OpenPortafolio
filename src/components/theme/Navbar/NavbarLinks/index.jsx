@@ -11,8 +11,8 @@ const NavbarLinks = ({ desktop }) => {
       <AnchorLink href="#about" className="lead pr-3">
         About
       </AnchorLink>
-      <AnchorLink href="#courses" className="lead pr-3">
-        Courses
+      <AnchorLink href="#Blog" className="lead pr-3">
+        Blog
       </AnchorLink>
       <AnchorLink href="#skills" className="lead pr-3">
         Skills

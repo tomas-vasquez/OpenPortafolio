@@ -5,7 +5,7 @@ import Portfolio from "../components/landing/Portfolio";
 import AboutMe from "../components/landing/AboutMe";
 import Skills from "../components/landing/Skills";
 import ContactMe from "../components/landing/ContactMe";
-import Courses from "../components/landing/Courses";
+import Blog from "../components/landing/Blog";
 
 import Layout from "../components/common/layout";
 import SEO from "../components/common/seo";
@@ -18,7 +18,7 @@ const BlogIndex = ({ data, location }) => {
       <SEO />
       <Portfolio />
       <AboutMe />
-      <Courses />
+      <Blog />
       <Skills />
       <ContactMe />
     </Layout>

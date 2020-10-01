@@ -72,7 +72,14 @@ const SEO = ({ description, lang, meta, title }) => {
         },
       ].concat(meta)}
     >
-      <style src="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+      <meta
+        name="viewport"
+        content="width=divice-width, initial-scale=0.9, maximun-scale=0.9, user-scalable=0"
+      />
+      <script
+        src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
+        crossorigin="anonymous"
+      ></script>
     </Helmet>
   );
 };
