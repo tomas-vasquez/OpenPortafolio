@@ -86,7 +86,6 @@ export default () => (
             aria-label="message"
             id="message"
             rows="8"
-            type="text"
             name="message"
             placeholder="Message*"
             error={touched.message && errors.message}

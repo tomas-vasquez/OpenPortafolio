@@ -78,11 +78,6 @@ module.exports = {
   },
   portfolio: {
     portfolioHeading: "Proyects",
-    proyects: [
-      { imgUrl: "portafolio.jpg", githubUrl: "git.ccom/dwe" },
-      { imgUrl: "academy.jpg", githubUrl: "git.ccom/dwe" },
-      { imgUrl: "academyAdmin.jpg", githubUrl: "git.ccom/dwe" },
-    ],
   },
   footer: {
     location: "Barrio Estacion Argentina  # 456 \n - Santa Cruz - Bolivia",

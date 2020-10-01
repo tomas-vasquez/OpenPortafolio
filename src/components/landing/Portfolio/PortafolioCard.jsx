@@ -1,37 +1,53 @@
-import React, { useState } from "react";
-import Image from "gatsby-image";
-import PortafolioModal from "./PortafolioModal";
+import React from "react";
 
-export default function PortafolioCard({ proyect, image }) {
-  const [isOpen, setIsOpen] = useState(false);
+import Languajes from "./languajes";
 
+import { faCodeBranch, faStar } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+export default function PortafolioCard({ proyect }) {
+  const image = `${proyect.openGraphImageUrl}`;
   return (
     <>
-      <div className="col-md-6 col-lg-4 mb-5">
+      <div className="mb-4">
+        {!image.search("https://avatars0") ? null : (
+          <img
+            className="m-0"
+            src={image}
+            alt={proyect.name}
+            style={{
+              borderTopLeftRadius: "0.5rem",
+              borderTopRightRadius: "0.5rem",
+            }}
+          />
+        )}
         <div
-          className="portfolio-item mx-auto shadow"
-          role="button"
-          onClick={() => {
-            setIsOpen(true);
-          }}
+          className="card"
+          style={
+            image.search("https://avatars0")
+              ? {
+                  borderTop: 0,
+                  borderTopLeftRadius: 0,
+                  borderTopRightRadius: 0,
+                }
+              : null
+          }
         >
-          <Image fluid={image.fluid} alt={JSON.stringify(proyect)} />
-          <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-            <div className="portfolio-item-caption-content text-center text-white">
-              <i className="fas fa-plus fa-1x"></i>
-            </div>
+          <div className="card-body p-2">
+            <a className="p-2 m-0" href={proyect.url}>
+              {proyect.name}
+            </a>
+            <p className="p-2 m-0">{proyect.description}</p>
+            <small className="text-muted mr-2">
+              <FontAwesomeIcon icon={faStar} /> {proyect.stargazers.totalCount}
+            </small>
+            <small className="text-muted mr-2">
+              <FontAwesomeIcon icon={faCodeBranch} /> {proyect.forkCount}
+            </small>
+            <Languajes languages={proyect.languages} />
           </div>
-          <p className="p-2 m-0 border-top">proyect Name</p>
         </div>
       </div>
-      <PortafolioModal
-        isOpen={isOpen}
-        proyect={proyect}
-        image={image}
-        closeModal={() => {
-          setIsOpen(false);
-        }}
-      />
     </>
   );
 }

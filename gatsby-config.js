@@ -1,8 +1,8 @@
 const config = require("./src/data/config");
 
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-});
+// init. environment variables
+const dotenv = require("dotenv");
+dotenv.config();
 
 const { githubApiQuery } = require("./github-api");
 
@@ -25,13 +25,6 @@ module.exports = {
       options: {
         path: `${__dirname}/content/assets`,
         name: `assets`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/portfolio`,
-        name: `portfolio`,
       },
     },
     {
@@ -87,18 +80,15 @@ module.exports = {
     {
       resolve: `gatsby-source-github-api`,
       options: {
-        // default Github GraphQL v4 API endpoint
-        url: "https://api.github.com/graphql",
-
         // token: required by the GitHub API
-        token: process.env.GITHUB_PERSONAL_ACCESS_TOKEN,
+        token: `${process.env.GITHUB_PERSONAL_ACCESS_TOKEN}`,
 
         // GraphQLquery: defaults to a search query
         graphQLQuery: githubApiQuery,
 
         // variables: defaults to variables needed for a search query
         variables: {
-          github_login: process.env.GITHUB_LOGIN,
+          github_login: `${process.env.GITHUB_LOGIN}`,
         },
       },
     },

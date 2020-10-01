@@ -6,24 +6,47 @@ import PortafolioCard from "./PortafolioCard";
 import { portfolio } from "../../../data/config";
 
 export default function Portfolio() {
-  const data = useStaticQuery(graphql`
-    query portafolioQuery {
-      allFile(filter: { ext: { eq: ".jpg" } }) {
-        edges {
-          node {
-            base
-            childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
+  const data = useStaticQuery(
+    graphql`
+      query portafolioQuery {
+        allGithubData {
+          nodes {
+            data {
+              user {
+                repositories {
+                  nodes {
+                    description
+                    forkCount
+                    id
+                    name
+                    primaryLanguage {
+                      name
+                    }
+                    languages {
+                      nodes {
+                        name
+                      }
+                    }
+                    updatedAt(fromNow: false)
+                    readme {
+                      text
+                    }
+                    stargazers {
+                      totalCount
+                    }
+                    openGraphImageUrl
+                    url
+                  }
+                }
               }
             }
           }
         }
       }
-    }
-  `);
+    `
+  );
 
-  const proyects = portfolio.proyects;
+  const repos = data.allGithubData.nodes[0].data.user.repositories.nodes;
   const portfolioHeading = portfolio.portfolioHeading;
 
   return (
@@ -40,17 +63,21 @@ export default function Portfolio() {
           <div className="divider-custom-line"></div>
         </div>
         <div className="row">
-          {proyects.map((proyect, key) => (
-            <PortafolioCard
-              key={key}
-              proyect={proyect}
-              image={
-                data.allFile.edges.find((edge) => {
-                  return edge.node.base === proyect.imgUrl;
-                }).node.childImageSharp
-              }
-            />
-          ))}
+          <div className="col-md-6 col-lg-4 mb-5">
+            {repos.slice(0, 3).map((repo, key) => (
+              <PortafolioCard key={key} proyect={repo} />
+            ))}
+          </div>
+          <div className="col-md-6 col-lg-4 mb-5">
+            {repos.slice(3, 6).map((repo, key) => (
+              <PortafolioCard key={key} proyect={repo} />
+            ))}
+          </div>
+          <div className="col-md-6 col-lg-4 mb-5">
+            {repos.slice(6, 9).map((repo, key) => (
+              <PortafolioCard key={key} proyect={repo} />
+            ))}
+          </div>
         </div>
       </div>
     </section>

@@ -72,7 +72,7 @@ const SEO = ({ description, lang, meta, title }) => {
         },
       ].concat(meta)}
     >
-      <script src="/js/fontawesome-all.min.js" />
+      <style src="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     </Helmet>
   );
 };
