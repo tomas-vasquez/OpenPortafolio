@@ -3,10 +3,25 @@ import React, { Component } from "react";
 import Particles from "react-particles-js";
 
 export default class particles extends Component {
+  constructor() {
+    super();
+    this.state = {
+      width: window.innerWidth,
+      height: window.innerHeight,
+    };
+  }
+
   componentDidMount() {
     window.addEventListener("resize", () => {
-      this.forceUpdate();
+      this.setState({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
     });
+  }
+
+  ruleTreeSimple(a, b, c) {
+    return Math.abs((b * c) / a);
   }
 
   render() {
@@ -19,11 +34,13 @@ export default class particles extends Component {
         className="fixed-top bgstyle m-0"
       >
         <Particles
+          height={this.state.height}
+          width={this.state.width}
           params={{
             pauseOnBlur: true,
             particles: {
               number: {
-                value: 70,
+                value: this.ruleTreeSimple(1000, 60, this.state.width),
               },
               size: {
                 value: 3,
@@ -32,7 +49,6 @@ export default class particles extends Component {
                 value: 0.2,
               },
               line_linked: {
-                enable: true,
                 opacity: 0.1,
               },
               move: {

@@ -6,7 +6,6 @@
  */
 
 import React from "react";
-import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
@@ -36,7 +35,7 @@ const SEO = ({ description, lang, meta, title }) => {
         lang,
       }}
       title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+      titleTemplate={`%s | ${defaultTitle}`}
       meta={[
         {
           name: `description`,
@@ -71,16 +70,7 @@ const SEO = ({ description, lang, meta, title }) => {
           content: metaDescription,
         },
       ].concat(meta)}
-    >
-      <meta
-        name="viewport"
-        content="width=divice-width, initial-scale=0.9, maximun-scale=0.9, user-scalable=0"
-      />
-      <script
-        src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
-        crossorigin="anonymous"
-      ></script>
-    </Helmet>
+    />
   );
 };
 
@@ -88,13 +78,6 @@ SEO.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
-};
-
-SEO.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
 };
 
 export default SEO;

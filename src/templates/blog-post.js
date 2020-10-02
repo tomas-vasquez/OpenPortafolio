@@ -4,8 +4,11 @@ import { Link, graphql } from "gatsby";
 import Layout from "../components/common/layout";
 import SEO from "../components/common/seo";
 import { rhythm, scale } from "../utils/typography";
-import AuthorBlog from "../components/common/AuthorBlog";
+import AuthorBlog from "../components/blog/AuthorBlog";
 import SocialFedds from "../components/blog/SocialFedds";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark;
@@ -17,7 +20,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <div className="container bg-white mb-5">
+      <div className="container bg-white mb-5 shadow">
         <div className="row ">
           <div className="col-lg-8 pr-lg-0">
             <article
@@ -26,15 +29,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               itemType="http://schema.org/Article"
             >
               <header>
-                {/* <h1
-                  itemProp="headline"
-                  style={{
-                    marginTop: rhythm(1),
-                    marginBottom: 0,
-                  }}
-                >
-                  {post.frontmatter.title}
-                </h1> */}
                 <p
                   style={{
                     ...scale(-1 / 5),
@@ -55,28 +49,36 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             <AuthorBlog />
             <SocialFedds />
           </div>
-          <ul className="pager">
-            {previous && (
-              <li className="px-4 py-3">
-                <h5>Previous Articles</h5>
-                <h3 className="post-title">
-                  <Link to={previous.fields.slug} rel="prev">
-                    ← {previous.frontmatter.title}
-                  </Link>
-                </h3>
-              </li>
-            )}
-            {next && (
-              <li className="px-4 py-3 text-right ml-auto">
-                <h5>Next Articles</h5>
-                <h3 className="post-title">
-                  <Link to={next.fields.slug} rel="next">
-                    {next.frontmatter.title} →
-                  </Link>
-                </h3>
-              </li>
-            )}
-          </ul>
+          <div className="container border-top">
+            <div className="row d-flex">
+              {previous && (
+                <div className="col-md-6">
+                  <div className="py-3">
+                    <p className="mb-1 ml-4">Previous Articles</p>
+                    <h5 className="post-title">
+                      <Link to={previous.fields.slug} rel="prev">
+                        <FontAwesomeIcon icon={faArrowLeft} />{" "}
+                        {previous.frontmatter.title}
+                      </Link>
+                    </h5>
+                  </div>
+                </div>
+              )}
+              {next && (
+                <div className="col-md-6 ml-auto">
+                  <div className="py-3 text-right">
+                    <p className="mb-1 mr-4">Next Articles</p>
+                    <h5 className="post-title">
+                      <Link to={next.fields.slug} rel="next">
+                        {next.frontmatter.title}{" "}
+                        <FontAwesomeIcon icon={faArrowRight} />
+                      </Link>
+                    </h5>
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
         </div>
       </div>
     </Layout>

@@ -1,24 +1,15 @@
 import React, { Component } from "react";
 import ContactForm from "./ContactForm";
 import contact from "../../../assets/illustrations/contact.svg";
+import Separator from "../../common/Separator";
 
 export default class ContactMe extends Component {
   render() {
     return (
       <section className="page-section bg-white" id="contact">
         <div className="container">
-          <h2 className="display-4 mb-0 text-center text-uppercase text-secondary mb-0">
-            Contact Me
-          </h2>
-          <div className="divider-custom">
-            <div className="divider-custom-line"></div>
-            <div className="divider-custom-icon">
-              <i className="fas fa-star"></i>
-            </div>
-            <div className="divider-custom-line"></div>
-          </div>
+          <Separator title="Contant Me" dark />
           <div className="row d-flex">
-            {/* j */}
             <div className="col-lg-6 mx-auto pt-5">
               <ContactForm />
             </div>

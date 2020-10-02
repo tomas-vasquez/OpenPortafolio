@@ -2,6 +2,8 @@ import React, { Fragment } from "react";
 
 //config
 import { skills } from "../../../data/config";
+import Icons from "../../common/Icons";
+import Separator from "../../common/Separator";
 
 const Skills = () => {
   return (
@@ -10,31 +12,22 @@ const Skills = () => {
       id="skills"
     >
       <div className="container">
-        <h2 className="display-4 mb-0 text-center text-uppercase mb-0">
-          {skills.skillsHeading}
-        </h2>
-        <div className="divider-custom divider-light">
-          <div className="divider-custom-line"></div>
-          <div className="divider-custom-icon">
-            <i className="fas fa-star"></i>
-          </div>
-          <div className="divider-custom-line"></div>
-        </div>
-
-        <div className="row d-flex">
+        <Separator title={skills.skillsHeading} />
+        <div className="row d-flex py-4">
           <div className="col-12 col-md-10 col-lg-8 mx-auto">
-            <div className="card text-secondary">
-              <div className="card-body pb-0">
-                <div className="row mb-0">
+            <div className="card text-secondary shadow">
+              <div className="card-body pb-1">
+                <div className="row">
                   {skills.mySkills.map((skill, key) => (
                     <Fragment key={`${skill.icon}`}>
                       <div className="col-6 col-sm-4 col-lg-3">
                         <p className="lead">
-                          <i
-                            className={`${skill.icon} mr-3`}
+                          <Icons
+                            icon={skill.icon}
                             style={{
                               color: skill.color,
                             }}
+                            className="mr-3"
                           />
                           {skill.name}
                         </p>

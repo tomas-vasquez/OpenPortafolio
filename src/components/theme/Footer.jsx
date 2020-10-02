@@ -1,4 +1,5 @@
 import React from "react";
+import Icons from "../common/Icons";
 
 //config
 import { banner, footer } from "../../data/config";
@@ -14,8 +15,9 @@ export default function Footer() {
           <div className="row">
             <div className="col-12 col-md-6 col-xl-4">
               <h5 className="text-uppercase mb-4">Location</h5>
-              <p className="lead mb-0">{location}</p>
+              <p className="m-0">{location}</p>
             </div>
+
             <div className="col-12 col-md-6 col-xl-4 mt-5 mt-md-0">
               <h5 className="text-uppercase mb-4">Around the Web</h5>
               {icons.map((icon) => (
@@ -24,18 +26,23 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   href={icon.url}
-                  aria-label={`My ${icon.image.split("-")[1]}`}
+                  aria-label={`My ${icon.icon}`}
                   className="btn btn-outline-light btn-social mx-1"
                 >
-                  <i className={`${icon.image}`} />
+                  <Icons icon={icon.icon} />
                 </a>
               ))}
             </div>
             <div className="d-none d-xl-block col-xl-4">
-              <h5 className="text-uppercase mb-4">About Laveggod Portfolio</h5>
-              <p className="lead mb-0">
+              <h5 className="text-uppercase mb-4">About open-portfolio</h5>
+              <p className="m-0">
                 Project code is open source. Feel free to{" "}
-                <a href="https://github/tomasdetloging/lavegood-portfolio">
+                <a
+                  rel="noopener"
+                  href="https://github.com/tomasdetloging/open-portafolio"
+                  aria-label="My GitHub"
+                  style={{ textDecoration: "underline", color: "white" }}
+                >
                   clone
                 </a>{" "}
                 and make your own version.
@@ -44,23 +51,6 @@ export default function Footer() {
           </div>
         </div>
       </footer>
-      <div className="pb-4 text-center text-white">
-        <div className="container">
-          made with <i className="fas fa-heart"></i> by{" "}
-          <a
-            className="badge badge-dark"
-            rel="noopener"
-            href="https://github.com/tomasdetloging"
-            aria-label="My GitHub"
-          >
-            Tomi
-          </a>{" "}
-          using <i className="fab fa-react"></i>
-          <p className="mb-0">
-            <small className="text-muted"> </small>
-          </p>
-        </div>
-      </div>
     </>
   );
 }

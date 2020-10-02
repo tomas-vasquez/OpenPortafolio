@@ -3,6 +3,8 @@ import Typist from "react-typist";
 
 //config
 import { banner } from "../../../data/config";
+import Icons from "../../common/Icons";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Banner = () => {
   const FirstName = banner.FirstName;
@@ -19,11 +21,13 @@ const Banner = () => {
           className="title bg-transparent text-light min-vh-100 d-flex align-content-center align-items-center flex-wrap m-0"
         >
           <div className="container container-fluid text-center ">
-            <h1 className="display-3">
+            <h1 className="display-3 pt-4 pb-3">
               {FirstName + " " + MiddleName + " " + LastName}
             </h1>
-            <Typist className="lead"> {devDesc}</Typist>
-            <div className="py-5">
+            <div className="pb-4">
+              <Typist className="lead"> {devDesc}</Typist>
+            </div>
+            <div className="pb-5">
               {icons.map((icon) => (
                 <a
                   className="socialicons"
@@ -31,20 +35,20 @@ const Banner = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   href={icon.url}
-                  aria-label={`My ${icon.image.split("-")[1]}`}
+                  aria-label={`My ${icon.icon}`}
                 >
-                  <i className={`${icon.image}  fa-3x`} />
+                  <Icons icon={icon.icon} size="3x" />
                 </a>
               ))}
             </div>
-            <a
-              className="btn btn-outline-light"
-              href="#aboutme"
+            <AnchorLink
+              className="btn btn-outline-light btn-lg"
+              href="#about"
               role="button"
               aria-label="Learn more about me"
             >
               More about me
-            </a>
+            </AnchorLink>
           </div>
         </div>
       </div>

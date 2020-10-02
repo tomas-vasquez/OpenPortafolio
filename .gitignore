@@ -70,3 +70,6 @@ yarn-error.log
 
 #generated styles
 src/assets/css/*
+
+#vs-code configuration
+.vscode

@@ -1,9 +1,9 @@
 import React from "react";
-import { Link, graphql } from "gatsby";
-import Image from "gatsby-image";
+import { graphql } from "gatsby";
 
 import Layout from "../components/common/layout";
 import SEO from "../components/common/seo";
+import BlogCard from "../components/landing/Blog/blogCard";
 
 const BlogIndex = ({ data, location }) => {
   const posts = data.allMarkdownRemark.nodes;
@@ -11,55 +11,12 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title="All posts">
       <SEO title="All posts" />
-      <section class="content-wrap">
-        <div class="container">
-          <div class="row bg-white py-2" id="post-masonry">
+      <section>
+        <div className="container" fluid>
+          <div className="row bg-white py-4 shadow">
             {posts.length !== 0 ? (
               posts.map((post) => {
-                const cover = post.frontmatter.cover?.childImageSharp.fluid;
-                const title = post.frontmatter.title || post.fields.slug;
-                return (
-                  <article
-                    class="col-sm-4 post post-masonry post-format-image"
-                    key={post.fields.slug}
-                    itemScope
-                    itemType="http://schema.org/Article"
-                  >
-                    <div class="post-wrapper">
-                      <div class="featured-content">
-                        <Link
-                          style={{ boxShadow: `none` }}
-                          to={post.fields.slug}
-                          itemProp="url"
-                        >
-                          <Image
-                            fluid={cover}
-                            alt={`${title}`}
-                            className="img-responsive"
-                          />
-                        </Link>
-                      </div>
-                      <div class="post-excerpt">
-                        <h3 class="post-title">
-                          <Link
-                            style={{ boxShadow: `none` }}
-                            to={post.fields.slug}
-                            itemProp="url"
-                          >
-                            {title}
-                          </Link>
-                        </h3>
-                        <p
-                          dangerouslySetInnerHTML={{
-                            __html:
-                              post.frontmatter.description || post.excerpt,
-                          }}
-                          itemProp="description"
-                        />
-                      </div>
-                    </div>
-                  </article>
-                );
+                return <BlogCard post={post} />;
               })
             ) : (
               <p>

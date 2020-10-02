@@ -42,10 +42,16 @@ export default function AuthorBlog() {
             className="author-avatar rounded-circle"
           />
         </div>
-        <h2 className="mt-5 author-name">{author}</h2>
-        <h5 className="author-title d-none d-lg-block">about me</h5>
-        <p className="mb-2">{aboutDescription}</p>
-        <Link className="know-more">know more</Link>
+        <h2 className="mt-5 mb-3 author-name">{author}</h2>
+        <p>{aboutDescription}</p>
+        <Link
+          to="/"
+          className="btn btn-secondary btn-sm"
+          role="button"
+          aria-label="Learn more about me"
+        >
+          about me
+        </Link>
       </div>
       <div className="text-center pt-3 pb-5">
         {icons.map((icon) => (

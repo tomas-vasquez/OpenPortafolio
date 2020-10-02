@@ -4,6 +4,7 @@ import Image from "gatsby-image";
 
 //config
 import { about } from "../../../data/config";
+import Separator from "../../common/Separator";
 
 export default function AboutMe() {
   const data = useStaticQuery(graphql`
@@ -36,16 +37,7 @@ export default function AboutMe() {
   return (
     <section className="page-section mb-0 bg-transparent text-light" id="about">
       <div className="container">
-        <h2 className="display-4 mb-0 text-center text-uppercase">
-          {aboutHeading}
-        </h2>
-        <div className="divider-custom divider-light">
-          <div className="divider-custom-line"></div>
-          <div className="divider-custom-icon">
-            <i className="fas fa-star"></i>
-          </div>
-          <div className="divider-custom-line"></div>
-        </div>
+        <Separator title={aboutHeading} />
         <div className="row">
           <div className="col-12 col-md-6 col-lg-4 d-flex">
             <Image
@@ -54,15 +46,8 @@ export default function AboutMe() {
               className="mx-auto rounded-circle mb-4 mb-md-0"
             />
           </div>
-          <div className="col-12 col-md-6 col-lg-8 my-auto">
-            <p
-              className="lead"
-              style={{
-                fontWeight: 400,
-              }}
-            >
-              {aboutDescription}
-            </p>
+          <div className="col-12 col-md-6 col-lg-8">
+            <p className="lead">{aboutDescription}</p>
           </div>
         </div>
       </div>
