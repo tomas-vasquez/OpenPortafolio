@@ -1,10 +1,10 @@
 const config = require("./src/data/config");
+const feedRss = require("./src/data/feedRss");
+const githubApiQuery = require("./src/data/github-api");
 
 // init. environment variables
 const dotenv = require("dotenv");
 dotenv.config();
-
-const { githubApiQuery } = require("./github-api");
 
 module.exports = {
   siteMetadata: {
@@ -13,6 +13,7 @@ module.exports = {
     author: { ...config.author },
   },
   plugins: [
+    feedRss,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -57,7 +58,6 @@ module.exports = {
         //trackingId: `ADD YOUR TRACKING ID HERE`,
       },
     },
-    `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -77,20 +77,20 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    // {
-    //   resolve: `gatsby-source-github-api`,
-    //   options: {
-    //     // token: required by the GitHub API
-    //     token: `${process.env.GITHUB_PERSONAL_ACCESS_TOKEN}`,
+    {
+      resolve: `gatsby-source-github-api`,
+      options: {
+        // token: required by the GitHub API
+        token: `${process.env.GITHUB_PERSONAL_ACCESS_TOKEN}`,
 
-    //     // GraphQLquery: defaults to a search query
-    //     graphQLQuery: githubApiQuery,
+        // GraphQLquery: defaults to a search query
+        graphQLQuery: githubApiQuery,
 
-    //     // variables: defaults to variables needed for a search query
-    //     variables: {
-    //       github_login: `${process.env.GITHUB_LOGIN}`,
-    //     },
-    //   },
-    // },
+        // variables: defaults to variables needed for a search query
+        variables: {
+          github_login: `${process.env.GITHUB_LOGIN}`,
+        },
+      },
+    },
   ],
 };

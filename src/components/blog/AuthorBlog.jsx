@@ -4,6 +4,7 @@ import Image from "gatsby-image";
 
 //config
 import { about, banner } from "../../data/config";
+import Icons from "../common/Icons";
 
 export default function AuthorBlog() {
   const data = useStaticQuery(graphql`
@@ -61,7 +62,8 @@ export default function AuthorBlog() {
             rel="noopener noreferrer"
             href={icon.url}
           >
-            <i className={`${icon.image} fa-2x`} />
+            <Icons icon={icon.icon} size="2x" />
+            {/* <i className={`${icon.image} fa-2x`} /> */}
           </a>
         ))}
       </div>

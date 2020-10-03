@@ -24,7 +24,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         <div className="row ">
           <div className="col-lg-8 pr-lg-0">
             <article
-              className="bg-white p-3"
+              className="bg-white py-3 px-0 px-lg-3"
               itemScope
               itemType="http://schema.org/Article"
             >

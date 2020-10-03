@@ -6,6 +6,7 @@
   "author": "Tomas vasquez <tomasdetloging@gmail.com>",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.31",
+    "@fortawesome/free-brands-svg-icons": "^5.15.0",
     "@fortawesome/free-solid-svg-icons": "^5.15.0",
     "@fortawesome/react-fontawesome": "^0.1.11",
     "axios": "^0.19.2",

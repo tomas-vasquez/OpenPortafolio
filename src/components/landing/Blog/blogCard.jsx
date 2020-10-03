@@ -7,7 +7,7 @@ const BlogCard = ({ post }) => {
   const title = post.frontmatter.title || post.fields.slug;
   return (
     <div className="col-md-6 col-lg-4">
-      <article className="mb-3" itemScope itemType="http://schema.org/Article">
+      <article className="mb-4" itemScope itemType="http://schema.org/Article">
         {cover && (
           <Link
             style={{ boxShadow: `none` }}

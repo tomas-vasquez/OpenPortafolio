@@ -3,15 +3,13 @@ import Separator from "../../common/Separator";
 
 const Banner = ({ title }) => {
   return (
-    <>
-      <div>
-        <div className="jumbotron bg-transparent text-light align-content-center pb-1">
-          <div className="container text-center ">
-            <Separator title={title} />
-          </div>
+    <div className="pt-5 pt-lg-2">
+      <div className="jumbotron bg-transparent text-light align-content-center pb-1">
+        <div className="container text-center ">
+          <Separator title={title} />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

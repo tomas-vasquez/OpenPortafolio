@@ -6,12 +6,16 @@ export default class particles extends Component {
   constructor() {
     super();
     this.state = {
-      width: window.innerWidth,
-      height: window.innerHeight,
+      width: 1,
+      height: 0,
     };
   }
 
   componentDidMount() {
+    this.setState({
+      width: window.innerWidth,
+      height: window.innerHeight,
+    });
     window.addEventListener("resize", () => {
       this.setState({
         width: window.innerWidth,

@@ -1,4 +1,4 @@
-exports.githubApiQuery = `
+module.exports = githubApiQuery = `
 query($github_login: String!) {
 	user(login: $github_login) {
 		  repositories(first: 9) {

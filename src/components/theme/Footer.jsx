@@ -13,13 +13,13 @@ export default function Footer() {
       <footer className="py-5 text-light bg-trasparent">
         <div className="container">
           <div className="row">
-            <div className="col-12 col-md-6 col-xl-4">
-              <h5 className="text-uppercase mb-4">Location</h5>
+            <div className="col-12 col-md-6 col-xl-4 text-center text-lg-left">
+              <h5 className="text-uppercase mb-3">Location</h5>
               <p className="m-0">{location}</p>
             </div>
 
-            <div className="col-12 col-md-6 col-xl-4 mt-5 mt-md-0">
-              <h5 className="text-uppercase mb-4">Around the Web</h5>
+            <div className="col-12 col-md-6 col-xl-4 mt-5 mt-md-0 text-center">
+              <h5 className="text-uppercase mb-3">Around the Web</h5>
               {icons.map((icon) => (
                 <a
                   key={icon.id}
@@ -34,7 +34,7 @@ export default function Footer() {
               ))}
             </div>
             <div className="d-none d-xl-block col-xl-4">
-              <h5 className="text-uppercase mb-4">About open-portfolio</h5>
+              <h5 className="text-uppercase mb-3">About open-portfolio</h5>
               <p className="m-0">
                 Project code is open source. Feel free to{" "}
                 <a

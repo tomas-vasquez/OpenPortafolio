@@ -1,19 +1,43 @@
 import React, { useState } from "react";
+import { Link } from "gatsby";
 
-import Navbar from "./Navbar";
 import Hamburger from "./Hamburger";
 import Sidebar from "./Sidebar";
-import { Wrapper, Overlay } from "./styles";
 
-export default function Header() {
+import { Navbar as NavBar } from "reactstrap";
+
+//config
+import { banner } from "../../../data/config";
+import NavbarLinks from "./NavbarLinks";
+
+const FirstName = banner.FirstName;
+
+export default function Navbar(props) {
   const [sidebar, toggle] = useState(false);
 
   return (
-    <Wrapper>
+    <div className="my-navbar">
       <Hamburger sidebar={sidebar} toggle={toggle} />
-      <Overlay sidebar={sidebar} onClick={() => toggle(!sidebar)} />
-      <Navbar />
-      <Sidebar sidebar={sidebar} toggle={toggle} />
-    </Wrapper>
+
+      <div
+        className="my-navbar-overlay"
+        sidebar={sidebar}
+        onClick={() => toggle(!sidebar)}
+      />
+      <NavBar
+        style={{ position: "absolute", width: "100%" }}
+        className="navbar-dark p-3 px-md-5"
+      >
+        <div className="navbar-wrapper">
+          <Link to="/" className="text-white">
+            <h1 className="display-4">{`<${FirstName} />`}</h1>
+          </Link>
+        </div>
+        <div className="d-none d-lg-flex">
+          <NavbarLinks desktop {...props} />
+        </div>
+      </NavBar>
+      <Sidebar sidebar={sidebar} toggle={toggle} {...props} />
+    </div>
   );
 }

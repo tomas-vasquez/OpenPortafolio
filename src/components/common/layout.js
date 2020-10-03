@@ -20,9 +20,8 @@ const Layout = ({ location, title, children }) => {
   return (
     <>
       <Particles />
-      <Navbar />
+      <Navbar location={location} />
       <Intro title={title} />
-
       <main>{children}</main>
       <Footer />
     </>

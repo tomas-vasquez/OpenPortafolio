@@ -21,13 +21,13 @@ const Banner = () => {
           className="title bg-transparent text-light min-vh-100 d-flex align-content-center align-items-center flex-wrap m-0"
         >
           <div className="container container-fluid text-center ">
-            <h1 className="display-3 pt-4 pb-3">
+            <h1 className="display-3 pt-4 mb-3">
               {FirstName + " " + MiddleName + " " + LastName}
             </h1>
-            <div className="pb-4">
+            <div className="mb-4">
               <Typist className="lead"> {devDesc}</Typist>
             </div>
-            <div className="pb-5">
+            <div className="mb-5">
               {icons.map((icon) => (
                 <a
                   className="socialicons"
