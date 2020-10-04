@@ -20,8 +20,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <div className="container bg-white mb-5 shadow">
-        <div className="row ">
+      <div className="container bg-white shadow">
+        <div className="row">
           <div className="col-lg-8 pr-lg-0">
             <article
               className="bg-white py-3 px-0 px-lg-3"

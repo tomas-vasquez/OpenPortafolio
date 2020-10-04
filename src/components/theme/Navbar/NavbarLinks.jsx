@@ -7,7 +7,7 @@ const NavbarLinks = ({ location, desktop }) => {
 
   return (
     <>
-      {/* {JSON.stringify(desktop)} */}
+      {/* eslint-dsable-next-line*/}
       <div
         className="nav-links"
         style={{

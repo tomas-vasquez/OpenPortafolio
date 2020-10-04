@@ -18,10 +18,10 @@ export default function Navbar(props) {
   return (
     <div className="my-navbar">
       <Hamburger sidebar={sidebar} toggle={toggle} />
-
       <div
         className="my-navbar-overlay"
         sidebar={sidebar}
+        role="buttom"
         onClick={() => toggle(!sidebar)}
       />
       <NavBar

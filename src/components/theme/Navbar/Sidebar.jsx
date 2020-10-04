@@ -4,7 +4,7 @@ import NavbarLinks from "./NavbarLinks";
 const Sidebar = ({ sidebar, toggle, location }) => {
   return (
     <div
-      className="sidebar d-lg-none"
+      className="sidebar d-lg-none shadow"
       style={
         sidebar
           ? {

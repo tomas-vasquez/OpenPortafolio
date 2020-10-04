@@ -35,7 +35,7 @@ export default function AuthorBlog() {
 
   return (
     <aside className="mt-5 mt-lg-0 widget-author widget text-center">
-      <div className="widget-author-inner">
+      <div className="widget-author-inner px-2 px-lg-3">
         <div className="author-avatar-center">
           <Image
             fixed={avatar}
@@ -63,7 +63,6 @@ export default function AuthorBlog() {
             href={icon.url}
           >
             <Icons icon={icon.icon} size="2x" />
-            {/* <i className={`${icon.image} fa-2x`} /> */}
           </a>
         ))}
       </div>
