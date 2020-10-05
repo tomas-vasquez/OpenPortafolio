@@ -68,8 +68,5 @@ yarn-error.log
 .pnp.js
 .yarn-integrity
 
-#generated styles
-src/assets/css/*
-
 #vs-code configuration
 .vscode

@@ -77,20 +77,20 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    {
-      resolve: `gatsby-source-github-api`,
-      options: {
-        // token: required by the GitHub API
-        token: `${process.env.GITHUB_PERSONAL_ACCESS_TOKEN}`,
+    // {
+    //   resolve: `gatsby-source-github-api`,
+    //   options: {
+    //     // token: required by the GitHub API
+    //     token: `${process.env.GITHUB_PERSONAL_ACCESS_TOKEN}`,
 
-        // GraphQLquery: defaults to a search query
-        graphQLQuery: githubApiQuery,
+    //     // GraphQLquery: defaults to a search query
+    //     graphQLQuery: githubApiQuery,
 
-        // variables: defaults to variables needed for a search query
-        variables: {
-          github_login: `${process.env.GITHUB_LOGIN}`,
-        },
-      },
-    },
+    //     // variables: defaults to variables needed for a search query
+    //     variables: {
+    //       github_login: `${process.env.GITHUB_LOGIN}`,
+    //     },
+    //   },
+    // },
   ],
 };
