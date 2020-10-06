@@ -1,9 +1,9 @@
 module.exports = {
-  defaultTitle: "Desarrollador web",
+  defaultTitle: "Tomás Dev",
   defaultDescription:
-    "portafolio de proyectos de un desarrollador programador web en de bolivia",
+    "portafolio de proyectos de un desarrollador o programador web en de bolivia",
   author: {
-    name: `tomas vasquez`,
+    name: `Tomás Vásquez`,
   },
   banner: {
     FirstName: "Tomás",
@@ -16,25 +16,35 @@ module.exports = {
         icon: "github",
         url: "https://github.com/tomasdetloging",
       },
-      {
-        id: 356,
-        icon: "youtube",
-        url: "https://www.facebook.com/tomasdetloging",
-      },
-      {
-        id: 3,
-        icon: "linkedin",
-        url: "https://www.linkedin.com/in/tomasdetloging/",
-      },
+      // {
+      //   id: 1,
+      //   icon: "youtube",
+      //   url: "https://www.facebook.com/tomasdetloging",
+      // },
       {
         id: 2,
-        icon: "instagram",
-        url: "https://www.instagram.com/tomasdetloging/",
+        icon: "linkedin",
+        url: "https://www.linkedin.com/in/tomás-vásquez-8a45471b4",
       },
+      // {
+      //   id: 3,
+      //   icon: "instagram",
+      //   url: "https://www.instagram.com/tomasdetloging/",
+      // },
       {
         id: 4,
+        icon: "wathsapp",
+        url: "https://api.whatsapp.com/send?phone=59177649384",
+      },
+      {
+        id: 6,
         icon: "twitter",
-        url: "https://www.twitter.com/tomasdetloging/",
+        url: "https://www.twitter.com/_tomasvasquez_",
+      },
+      {
+        id: 5,
+        icon: "gmail",
+        url: "mailto:tomasdetloging@gmail.com",
       },
     ],
   },

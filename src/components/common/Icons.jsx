@@ -1,7 +1,7 @@
 import React from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faStar, faTimes } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
   faFacebook,
@@ -15,10 +15,16 @@ import {
   faBootstrap,
   faJsSquare,
   faNodeJs,
+  faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 
 const getIcon = (icon) => {
   switch (icon) {
+    case "gmail":
+      return faEnvelope;
+
+    case "wathsapp":
+      return faWhatsapp;
     case "star":
       return faStar;
 

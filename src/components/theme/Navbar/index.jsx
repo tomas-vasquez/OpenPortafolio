@@ -7,10 +7,8 @@ import Sidebar from "./Sidebar";
 import { Navbar as NavBar } from "reactstrap";
 
 //config
-import { banner } from "../../../data/config";
+import { defaultTitle } from "../../../data/config";
 import NavbarLinks from "./NavbarLinks";
-
-const FirstName = banner.FirstName;
 
 export default function Navbar(props) {
   const [sidebar, toggle] = useState(false);
@@ -30,7 +28,7 @@ export default function Navbar(props) {
       >
         <div className="navbar-wrapper">
           <Link to="/" className="text-white">
-            <h1 className="display-4">{`<${FirstName} />`}</h1>
+            <h1 className="display-4">{defaultTitle}</h1>
           </Link>
         </div>
         <div className="d-none d-lg-flex">
