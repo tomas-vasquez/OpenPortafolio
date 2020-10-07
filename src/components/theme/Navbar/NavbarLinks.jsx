@@ -13,7 +13,7 @@ const NavbarLinks = ({ location, desktop }) => {
         style={{
           display: !desktop ? "inline-grid" : "flex",
         }}
-        desktop={true}
+        // desktop={true}
       >
         {location.pathname === rootPath && (
           <>
@@ -33,7 +33,7 @@ const NavbarLinks = ({ location, desktop }) => {
             <AnchorLink href="#contact" className="lead pr-4 mb-0">
               Contact
             </AnchorLink>
-            {desktop ? <spam className="my-0 pr-4 text-white">|</spam> : <hr />}
+            {desktop ? <span className="my-0 pr-4 text-white">|</span> : <hr />}
           </>
         )}
         {(location.pathname === rootPath) !== "/" && (

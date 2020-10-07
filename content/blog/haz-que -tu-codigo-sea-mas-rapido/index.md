@@ -1,7 +1,7 @@
 ---
 title: Sets vs Array
 date: "2020-05-10T22:12:03.284Z"
-description: "Haz que tu código sea mas rápido usando set de javascript, Si solo usas matrices, te estas perdiendo un gran truco"
+description: "Haz que tu código sea mas rápido usando Set de javascript, Si solo usas matrices, te estás perdiendo un gran truco"
 cover: ./speed.jpg
 is_favorite: true
 ---

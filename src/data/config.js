@@ -79,9 +79,9 @@ module.exports = {
       { name: "Vue", value: 60, icon: "vuejs", color: "green" },
       {
         name: "bootstrap",
-        value: 90,
+        value: 95,
         icon: "bootstrap",
-        color: "violet",
+        color: "#6d0c6d",
       },
     ],
   },
@@ -90,5 +90,12 @@ module.exports = {
   },
   footer: {
     location: "Barrio Estacion Argentina  # 456 \n - Santa Cruz - Bolivia",
+  },
+  wathsappWidged: {
+    codeArea: "591",
+    phone: "77649384",
+    message: "Hola!... tienes algún proyecto para mí?... conversemos...",
+    tooltip: "Contactar con wathsapp",
+    inputPlaceholder: "Enviar mensage",
   },
 };

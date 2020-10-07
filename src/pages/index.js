@@ -10,18 +10,23 @@ import Blog from "../components/landing/Blog";
 import Layout from "../components/common/layout";
 import SEO from "../components/common/seo";
 
+import Widget from "../components/landing/Widget";
+
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`;
 
   return (
-    <Layout location={location} title={siteTitle}>
-      <SEO title="Home" />
-      <Portfolio />
-      <AboutMe />
-      <Blog />
-      <Skills />
-      <ContactMe />
-    </Layout>
+    <>
+      <Layout location={location} title={siteTitle}>
+        <SEO title="Home" />
+        <Portfolio />
+        <AboutMe />
+        <Blog />
+        <Skills />
+        <ContactMe />
+      </Layout>
+      <Widget />
+    </>
   );
 };
 
