@@ -23,7 +23,7 @@ export default function BoxWelcome({ isOpen, onClick }) {
     <Collapse isOpen={isOpen}>
       <div className={`chat-box-welcome__header d-block`}>
         <div className="chat-box__header-text">
-          <p className="chat-box-welcome__company-name">Enviar mensage</p>
+          <span className="chat-box-welcome__company-name">Enviar mensage</span>
           <span className="chat-box-toggle" onClick={onClick}>
             <Icons icon="" />
           </span>

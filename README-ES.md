@@ -1,28 +1,27 @@
-## Open Portafolio
+# Open Portafolio
 
-Portfolio for developers.
+portafolio de proyectos para desarrolladores.
 
 ![](./Screenshot.png)
 
 ## Demo
 
-View this proyect here: https://tomas-dev.vercel.app
+Mira este proyecto aqui: https://tomas-dev.vercel.app
 
-## Features
+## Caracteristicas
 
-- Scores 100% on a11y / Performance / PWA / SEO
-- PWA (desktop & mobile)
-- Easy to customize
-- Nice project structure
+- Puntaje de 100% en a11y / Performance / PWA / SEO
+- PWA (escritorio y móvil)
+- Fácil de personalizar
 - Tablet & mobile friendly
-- Continuous deployment with Vercel
-- Fetches your Github pinned projects with most stars
-- sass styles
-- simple widget for wathsapp
-- Animated background 
-- Personal blog using markdown files
+- Despliege continuo en vercel
+- Muestra tus proyectos con mas estrellas de github 
+- estilos en sass
+- Widget simple para wathsapp
+- Fondo animado
+- Blog personal usando archivos markdown
 
-## Structure
+## Estructura
 
 ```bash
 .
@@ -41,10 +40,14 @@ View this proyect here: https://tomas-dev.vercel.app
 └── static                  # favicon & Netlify redirects
 ```
 
-## License
+## Licensia
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for more details
+Este proyecto está licensiado bajo la licensia MIT  - mira el archivo [LICENSE.md](LICENSE.md) para más detalles
 
-## Support
+## Soporte
 
-If you love this Gatsby template and want to support me, you can do so through my GitHub profile.
+Puedes consultarme cualquier cosa sobre este proyecto atravéz de cualquiera de mis redes sociales que aparecen en mi página personal:
+
+https://tomas-dev.vercel.app
+
+  

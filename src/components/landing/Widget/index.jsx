@@ -16,7 +16,6 @@ export default function Index() {
     window.addEventListener("scroll", (e) => {
       const scrollY = e.currentTarget.scrollY;
       const main = document.getElementsByTagName("main")[0];
-      // console.log();
       const mainHeight = main.scrollHeight;
 
       if (scrollY && mainHeight && scrollY < mainHeight && scrollY > 100) {
