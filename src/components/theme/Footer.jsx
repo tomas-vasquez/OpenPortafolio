@@ -5,7 +5,6 @@ import Icons from "../common/Icons";
 import { banner, footer } from "../../data/config";
 
 export default function Footer() {
-  const location = footer.location;
   const icons = banner.icons;
 
   return (
@@ -15,14 +14,14 @@ export default function Footer() {
           <div className="row">
             <div className="col-12 col-md-6 col-xl-4 text-center text-lg-left">
               <h5 className="text-uppercase mb-3 d-none d-md-block">
-                Location
+                {footer.locationTitle}
               </h5>
-              <p className="m-0">{location}</p>
+              <p className="m-0">{footer.location}</p>
             </div>
 
             <div className="col-12 col-md-6 col-xl-4 mt-4 mt-lg-0 mt-md-0 text-center">
               <h5 className="text-uppercase mb-3 d-none d-md-block">
-                Around the Web
+                {footer.socialLinksTitle}
               </h5>
               {icons.map((icon) => (
                 <a
@@ -39,19 +38,18 @@ export default function Footer() {
             </div>
             <div className="d-none d-xl-block col-xl-4">
               <h5 className="text-uppercase mb-3 d-none d-lg-block">
-                About open-portfolio
+                {footer.aboutTitle}
               </h5>
               <p className="m-0">
-                Project code is open source. Feel free to{" "}
+                {footer.about}{" "}
                 <a
                   rel="noopener"
                   href="https://github.com/tomasdetloging/open-portafolio"
                   aria-label="My GitHub"
                   style={{ textDecoration: "underline", color: "white" }}
                 >
-                  clone
-                </a>{" "}
-                and make your own version.
+                  open-portafolio
+                </a>
               </p>
             </div>
           </div>

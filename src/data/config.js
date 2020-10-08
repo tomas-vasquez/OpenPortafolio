@@ -88,14 +88,48 @@ module.exports = {
   portfolio: {
     portfolioHeading: "Proyects",
   },
+  contactMe: {
+    contactMeTitle: "Contáctame",
+    contactMeText:
+      'Puedes enviarme un correo a la dirección: <a href="mailto:tomasdetloging@gmail.com">tomasdetloging@gmail.com</a><br /> o también puedes contactarme mediante mis redes sociales:',
+  },
   footer: {
+    locationTitle: "Mi ubicacion",
     location: "Barrio Estacion Argentina  # 456 \n - Santa Cruz - Bolivia",
+    socialLinksTitle: "Mis redes",
+    aboutTitle: "Acerca de Open-Portfolio",
+    about: "Este portafolio es de código abierto... clona el repositorio:",
   },
   wathsappWidged: {
-    codeArea: "591",
-    phone: "77649384",
-    message: "Hola!... tienes algún proyecto para mí?... conversemos...",
-    tooltip: "Contactar con wathsapp",
-    inputPlaceholder: "Enviar mensage",
+    buttoms: [
+      {
+        href: "https://www.twitter.com/_tomasvasquez_",
+        tooltip: "Mi Twitter",
+        style: {
+          backgroundColor: "#17a2b8",
+          color: "rgb(250, 250, 250)",
+        },
+        icon: "twitter",
+      },
+      {
+        href: "mailto:tomasdetloging@gmail.com",
+        tooltip: "Enviar correo",
+        style: {
+          backgroundColor: "#117a8b",
+          color: "rgb(250, 250, 250)",
+        },
+        icon: "gmail",
+      },
+      {
+        href: "https://api.whatsapp.com/send?phone=59177649384",
+        tooltip: "Enviar mensage",
+        style: {
+          backgroundColor: "#28a745",
+          color: "rgb(250, 250, 250)",
+        },
+        className: " fa-2x",
+        icon: "wathsapp",
+      },
+    ],
   },
 };

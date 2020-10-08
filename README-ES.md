@@ -40,6 +40,13 @@ Mira este proyecto aqui: https://tomas-dev.vercel.app
 └── static                  # favicon & Netlify redirects
 ```
 
+## Variables de entorno
+
+```
+GITHUB_LOGIN => tu nombre de cuenta de github
+GITHUB_PERSONAL_ACCESS_TOKEN => tu token de acceso de github
+```
+
 ## Licensia
 
 Este proyecto está licensiado bajo la licensia MIT  - mira el archivo [LICENSE.md](LICENSE.md) para más detalles

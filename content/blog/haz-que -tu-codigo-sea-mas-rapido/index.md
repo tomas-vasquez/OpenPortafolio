@@ -146,6 +146,7 @@ let uniqueCollection = [...new Set(duplicateCollection)];
 console.log(uniqueCollection); // Resultado: ["A", "B", "C", "D"]
 ```
 
+<!--
 ### Caso 2: una pregunta de una entrevista de Google
 
 En otro artículo, analicé [cuatro soluciones a una pregunta formulada por un entrevistador de Google](https://medium.com/@bretcameron/4-ways-to-solve-a-google-interview-question-in-javascript-12e6eec87576) . La entrevista se realizó usando C ++, pero si fuera en JavaScript, un Set sería una parte necesaria de la solución final.
@@ -193,4 +194,4 @@ Debido a que `Set.prototype.has()`tiene una complejidad de tiempo de solo O (1),
 
 Si, en cambio, dependiéramos de `Array.prototype.indexOf()`o `Array.prototype.includes()`, los cuales tienen una complejidad de tiempo de O (N), el tiempo de ejecución total sería O (N²). ¡Mucho más lento!
 
-Si no se ha sumergido antes en conjuntos de JavaScript, ¡espero haber demostrado lo útiles que pueden ser!
+Si no se ha sumergido antes en conjuntos de JavaScript, ¡espero haber demostrado lo útiles que pueden ser! -->

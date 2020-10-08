@@ -39,7 +39,7 @@ export default function AboutMe() {
       <div className="container">
         <Separator title={aboutHeading} />
         <div className="row">
-          <div className="col-12 col-md-auto d-flex">
+          <div className="col-12 col-md-3 d-flex">
             <Image
               fixed={avatar}
               alt={`${title} - ${author}`}

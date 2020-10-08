@@ -6,6 +6,7 @@ import {
   faPaperPlane,
   faStar,
   faTimes,
+  faArrowDown,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
@@ -25,6 +26,9 @@ import {
 
 const getIcon = (icon) => {
   switch (icon) {
+    case "arrowDown":
+      return faArrowDown;
+
     case "send":
       return faPaperPlane;
     case "gmail":

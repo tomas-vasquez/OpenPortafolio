@@ -19,7 +19,7 @@ View this proyect here: https://tomas-dev.vercel.app
 - Fetches your Github pinned projects with most stars
 - sass styles
 - simple widget for wathsapp
-- Animated background 
+- Animated background
 - Personal blog using markdown files
 
 ## Structure
@@ -39,6 +39,13 @@ View this proyect here: https://tomas-dev.vercel.app
 │   │   └── theme             # Header & Footer
 │   └── pages               # Pages
 └── static                  # favicon & Netlify redirects
+```
+
+## Environments Vars
+
+```
+GITHUB_LOGIN => your github username
+GITHUB_PERSONAL_ACCESS_TOKEN => your github access token
 ```
 
 ## License

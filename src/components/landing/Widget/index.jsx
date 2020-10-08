@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from "react";
-import Circle from "./Circle";
-import BoxWelcome from "./BoxWelcome";
-import Chat from "./Chat";
-import Form from "./Form";
 import { Fade } from "reactstrap";
 
-export default function Index() {
-  const [open, setOpen] = useState(false);
-  const [chat, setchat] = useState(false);
+import { Container } from "react-floating-action-button";
+import Icons from "../../common/Icons";
+import ReactTooltip from "react-tooltip";
 
+import { wathsappWidged } from "../../../data/config";
+
+export default function Index() {
   const [fade, setfade] = useState(false);
   const [close, setclose] = useState(false);
 
@@ -22,8 +21,6 @@ export default function Index() {
         setfade(true);
       } else {
         setfade(false);
-        setOpen(false);
-        setchat(false);
       }
     });
   });
@@ -39,36 +36,20 @@ export default function Index() {
         setclose(false);
       }}
     >
-      <div className="App">
-        <Circle
-          onClick={() => {
-            setOpen(true);
-          }}
-        />
-        <div className={`chat-box ${open ? "d-block" : "d-none"}`}>
-          <div className="chat-box-body">
-            <BoxWelcome
-              isOpen={open && !chat}
-              onClick={() => {
-                setOpen(false);
-                setchat(false);
-              }}
-            />
-            <Chat
-              isOpen={open && chat}
-              onClick={() => {
-                setOpen(false);
-                setchat(false);
-              }}
-            />
-          </div>
-          <Form
-            onClick={() => {
-              setchat(true);
-            }}
-          />
-        </div>
-      </div>
+      <Container>
+        <ReactTooltip effect="solid" place="left" />
+        {wathsappWidged.buttoms.map((buttom) => (
+          <a
+            href={buttom.href}
+            target="_black"
+            class="fab-item"
+            data-tip={buttom.tooltip}
+            style={buttom.style}
+          >
+            <Icons icon={buttom.icon} className={buttom.className} />
+          </a>
+        ))}
+      </Container>
     </Fade>
   );
 }
