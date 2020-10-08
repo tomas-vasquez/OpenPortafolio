@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Fade } from "reactstrap";
 
-import { Container } from "react-floating-action-button";
 import Icons from "../../common/Icons";
 import ReactTooltip from "react-tooltip";
 
@@ -36,7 +35,7 @@ export default function Index() {
         setclose(false);
       }}
     >
-      <Container>
+      <div className="fab-container">
         <ReactTooltip effect="solid" place="left" />
         {wathsappWidged.buttoms.map((buttom) => (
           <a
@@ -49,7 +48,7 @@ export default function Index() {
             <Icons icon={buttom.icon} className={buttom.className} />
           </a>
         ))}
-      </Container>
+      </div>
     </Fade>
   );
 }
