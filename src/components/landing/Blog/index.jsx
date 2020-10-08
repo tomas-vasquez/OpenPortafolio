@@ -41,7 +41,7 @@ export default function Blog() {
     <section className="page-section bg-white" id="Blog">
       <div className="container">
         <Separator title={blog.blogHeading} dark />
-        <div className="row py-4">
+        <div class="card-columns py-4">
           {posts.map((post, key) => (
             <BlogCard post={post} key={key} />
           ))}
