@@ -47,12 +47,39 @@ module.exports = {
         url: "mailto:tomasdetloging@gmail.com",
       },
     ],
+    buttomText: "Más acerca de mí",
+  },
+
+  navbar: {
+    links: [
+      {
+        title: "Inicio",
+        href: "/",
+      },
+      {
+        title: "Blog",
+        href: "/blog",
+      },
+      {
+        icon: "github",
+        title: "",
+        href: "https://github.com/tomasdetloging",
+      },
+    ],
+  },
+
+  portfolio: {
+    portfolioHeading: "Proyectos",
   },
   about: {
-    aboutHeading: "About Me",
+    aboutHeading: "Acerca de mí",
     aboutDescription:
       "I'm Software Engineer, Bolivian with 3+ years of experience in web development. I’m currently the Vice President of student body at Emerging Technologies Research Lab(ETL) and a former Intern at RiseTech. I'm passionate about teaching machines how to think",
-    picUrl: "https://github/tomasdetloging.png",
+    picUrl: "https://github.com/tomasdetloging.png",
+  },
+  blog: {
+    blogHeading: "Posts",
+    blogButtomText: "Ver todos mis posts",
   },
   skills: {
     skillsHeading: "Skills",
@@ -85,16 +112,14 @@ module.exports = {
       },
     ],
   },
-  portfolio: {
-    portfolioHeading: "Proyects",
-  },
+
   contactMe: {
     contactMeTitle: "Contáctame",
     contactMeText:
       'Puedes enviarme un correo a la dirección: <a href="mailto:tomasdetloging@gmail.com">tomasdetloging@gmail.com</a><br /> o también puedes contactarme mediante mis redes sociales:',
   },
   footer: {
-    locationTitle: "Mi ubicacion",
+    locationTitle: "Mi ubicación",
     location: "Barrio Estacion Argentina  # 456 \n - Santa Cruz - Bolivia",
     socialLinksTitle: "Mis redes",
     aboutTitle: "Acerca de Open-Portfolio",

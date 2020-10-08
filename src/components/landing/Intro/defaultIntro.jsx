@@ -47,7 +47,7 @@ const Banner = () => {
               role="button"
               aria-label="Learn more about me"
             >
-              More about me
+              {banner.buttomText}
             </AnchorLink>
           </div>
         </div>

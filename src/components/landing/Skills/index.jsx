@@ -13,7 +13,7 @@ const Skills = () => {
     >
       <div className="container">
         <Separator title={skills.skillsHeading} />
-        <div className="row d-flex py-4">
+        <div className="row d-flex">
           <div className="col-12 col-md-11 col-lg-9 mx-auto">
             <div className="card text-secondary shadow">
               <div className="card-body pb-1">

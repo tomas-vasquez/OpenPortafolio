@@ -9,13 +9,6 @@ import Separator from "../../common/Separator";
 export default function AboutMe() {
   const data = useStaticQuery(graphql`
     query AboutQuery {
-      avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
-        childImageSharp {
-          fixed(width: 190, height: 190) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
       site {
         siteMetadata {
           title
@@ -29,9 +22,9 @@ export default function AboutMe() {
 
   const title = data.site.siteMetadata?.title;
   const author = data.site.siteMetadata?.author.name;
-  const avatar = data?.avatar?.childImageSharp?.fixed;
 
   const aboutDescription = about.aboutDescription;
+  const aboutAvatar = about.picUrl;
   const aboutHeading = about.aboutHeading;
 
   return (
@@ -40,8 +33,12 @@ export default function AboutMe() {
         <Separator title={aboutHeading} />
         <div className="row">
           <div className="col-12 col-md-3 d-flex">
-            <Image
-              fixed={avatar}
+            <img
+              style={{
+                width: 180,
+                height: 180,
+              }}
+              src={aboutAvatar}
               alt={`${title} - ${author}`}
               className="mx-auto rounded-circle mt-3 mt-md-0 mb-4 mb-md-0"
             />

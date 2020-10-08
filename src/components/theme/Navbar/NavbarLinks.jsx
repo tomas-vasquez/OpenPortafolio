@@ -2,6 +2,16 @@ import { Link } from "gatsby";
 import React from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
+import {
+  navbar,
+  portfolio,
+  about,
+  blog,
+  skills,
+  contactMe,
+} from "../../../data/config";
+import Icons from "../../common/Icons";
+
 const NavbarLinks = ({ location, desktop }) => {
   const rootPath = `${__PATH_PREFIX__}/`;
 
@@ -19,34 +29,30 @@ const NavbarLinks = ({ location, desktop }) => {
           <>
             {desktop}
             <AnchorLink href="#portfolio" className="lead pr-4">
-              Projects
+              {portfolio.portfolioHeading}
             </AnchorLink>
             <AnchorLink href="#about" className="lead pr-4">
-              About
+              {about.aboutHeading}
             </AnchorLink>
             <AnchorLink href="#Blog" className="lead pr-4">
-              Posts
+              {blog.blogHeading}
             </AnchorLink>
             <AnchorLink href="#skills" className="lead pr-4">
-              Skills
+              {skills.skillsHeading}
             </AnchorLink>
             <AnchorLink href="#contact" className="lead pr-4 mb-0">
-              Contact
+              {contactMe.contactMeTitle}
             </AnchorLink>
             {desktop ? <span className="my-0 pr-4 text-white">|</span> : <hr />}
           </>
         )}
-        {(location.pathname === rootPath) !== "/" && (
-          <Link to="/" className="lead pr-4">
-            Home
+        {navbar.links.map((link) => (
+          <Link to={link.href} className="lead pr-4">
+            {link.icon && <Icons icon={link.icon} className="mr-2" />}
+            {link.title}
           </Link>
-        )}
-        <Link to="/blog" className="lead pr-4">
-          Blog
-        </Link>
-        <Link to="/proyects" className="lead pr-4">
-          Proyects
-        </Link>
+        ))}
+        <Link to="" className="lead pr-4"></Link>
       </div>
     </>
   );
