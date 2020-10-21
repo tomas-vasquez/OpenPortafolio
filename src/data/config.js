@@ -21,11 +21,11 @@ module.exports = {
       //   icon: "youtube",
       //   url: "https://www.facebook.com/tomasdetloging",
       // },
-      {
-        id: 2,
-        icon: "linkedin",
-        url: "https://www.linkedin.com/in/tomás-vásquez-8a45471b4",
-      },
+      // {
+      //   id: 2,
+      //   icon: "linkedin",
+      //   url: "https://www.linkedin.com/in/tomás-vásquez-8a45471b4",
+      // },
       // {
       //   id: 3,
       //   icon: "instagram",
@@ -74,7 +74,7 @@ module.exports = {
   about: {
     aboutHeading: "Acerca de mí",
     aboutDescription:
-      "I'm Software Engineer, Bolivian with 3+ years of experience in web development. I’m currently the Vice President of student body at Emerging Technologies Research Lab(ETL) and a former Intern at RiseTech. I'm passionate about teaching machines how to think",
+      "Mi nombre es Tomás Vásquez y estoy especializado en el desarrollo y programación de aplicaciones web. Comensé mi formación académica en la univeridad estudiando Ing. Informática y después estudiando de manera autodidacta en plataformas de educación online, primero en EDteam y luego en Platzi, que me ayudaron a conseguir trabajo de manera remota y eventual en empresas como NetSoft, NullCode, Team y muchas otras más. En estos momentos siento que ha llegado el momento de cambiar de aires y llevar a cabo una nueva experiencia laboral. Sin duda, creo que su compañia es la perfecta para lograrlo.",
     picUrl: "https://github.com/tomasdetloging.png",
   },
   blog: {

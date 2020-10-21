@@ -7,6 +7,12 @@ import {
   faStar,
   faTimes,
   faArrowDown,
+  faGlobe,
+  faUser,
+  faRocket,
+  faArchive,
+  faBriefcase,
+  faMapPin,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
@@ -26,6 +32,23 @@ import {
 
 const getIcon = (icon) => {
   switch (icon) {
+    case "pointer":
+      return faMapPin;
+
+    case "briefcase":
+      return faBriefcase;
+
+    case "archive":
+      return faArchive;
+
+    case "rocket":
+      return faRocket;
+    case "user":
+      return faUser;
+
+    case "hear":
+      return faGlobe;
+
     case "arrowDown":
       return faArrowDown;
 

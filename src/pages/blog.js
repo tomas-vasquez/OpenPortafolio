@@ -12,8 +12,8 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title="All posts">
       <SEO title="All posts" />
       <section>
-        <div className="container" fluid>
-          <div className="row bg-white py-4 shadow">
+        <div className="container bg-white" fluid>
+          <div class="card-columns py-4">
             {posts.length !== 0 ? (
               posts.map((post) => {
                 return <BlogCard post={post} />;

@@ -1,6 +1,5 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import Image from "gatsby-image";
 
 //config
 import { about } from "../../../data/config";
@@ -35,8 +34,8 @@ export default function AboutMe() {
           <div className="col-12 col-md-3 d-flex">
             <img
               style={{
-                width: 180,
-                height: 180,
+                width: 150,
+                height: 150,
               }}
               src={aboutAvatar}
               alt={`${title} - ${author}`}
@@ -44,7 +43,7 @@ export default function AboutMe() {
             />
           </div>
           <div className="col-12 col-md text-center text-md-left">
-            <h2>I am a {author}</h2>
+            <h2>Hello!</h2>
             <p className="lead">{aboutDescription}</p>
           </div>
         </div>
