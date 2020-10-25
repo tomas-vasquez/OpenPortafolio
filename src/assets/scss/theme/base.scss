@@ -1,38 +1,3 @@
-body {
-  font-family: "Roboto", sans-serif;
-  color: $text-color-secondary;
-  //   background: $smoky-white;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 700;
-}
-
-a {
-  color: darken($theme-color, 15%);
-
-  &:hover {
-    text-decoration: underline;
-    color: darken($theme-color, 30%);
-    @include transition(all 0.4s ease-in-out);
-  }
-  &:focus {
-    text-decoration: none;
-  }
-}
-
-p {
-  line-height: 1.5;
-}
-
 .wrapper {
   //   background: $theme-color;
   max-width: 960px;

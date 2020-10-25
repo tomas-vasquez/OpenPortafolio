@@ -28,10 +28,17 @@ import {
   faJsSquare,
   faNodeJs,
   faWhatsapp,
+  faFirefoxBrowser,
 } from "@fortawesome/free-brands-svg-icons";
 
 const getIcon = (icon) => {
   switch (icon) {
+    case "globe":
+      return faFirefoxBrowser;
+
+    case "vercel":
+      return faGlobe;
+
     case "pointer":
       return faMapPin;
 

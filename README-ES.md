@@ -2,7 +2,7 @@
 
 portafolio de proyectos para desarrolladores.
 
-![](./Screenshot.png)
+![](./assets/Screenshot.png)
 
 ## Demo
 
@@ -15,7 +15,7 @@ Mira este proyecto aqui: https://tomas-dev.vercel.app
 - Fácil de personalizar
 - Tablet & mobile friendly
 - Despliege continuo en vercel
-- Muestra tus proyectos con mas estrellas de github 
+- Muestra tus proyectos con mas estrellas de github
 - estilos en sass
 - Widget simple para wathsapp
 - Fondo animado
@@ -49,12 +49,10 @@ GITHUB_PERSONAL_ACCESS_TOKEN => tu token de acceso de github
 
 ## Licensia
 
-Este proyecto está licensiado bajo la licensia MIT  - mira el archivo [LICENSE.md](LICENSE.md) para más detalles
+Este proyecto está licensiado bajo la licensia MIT - mira el archivo [LICENSE.md](LICENSE.md) para más detalles
 
 ## Soporte
 
 Puedes consultarme cualquier cosa sobre este proyecto atravéz de cualquiera de mis redes sociales que aparecen en mi página personal:
 
 https://tomas-dev.vercel.app
-
-  

@@ -2,7 +2,7 @@
 
 Portfolio for developers.
 
-![](./Screenshot.png)
+![](./assets/Screenshot.png)
 
 ## Demo
 

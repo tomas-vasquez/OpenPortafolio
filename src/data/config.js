@@ -70,6 +70,49 @@ module.exports = {
 
   portfolio: {
     portfolioHeading: "Proyectos",
+    portfolioButtomText: "Ver todo",
+
+    portfolioHeading2: "Repositorios",
+    portfolioButtomText2: "Ver todo",
+
+    deploys: [
+      {
+        title: "Open Portafolio",
+        image: "capture (2)",
+        linkRepo: "https://github.com/tomasdetloging/OpenPortafolio",
+        linkDemo: "",
+      },
+      {
+        title: "Open Trello",
+        image: "capture (1)",
+        linkRepo: "https://github.com/tomasdetloging/OpenTrello",
+        linkDemo: "https://open-trello.vercel.app/",
+      },
+      {
+        title: "Particle image example",
+        image: "capture (3)",
+        linkRepo: "https://github.com/tomasdetloging/",
+        linkDemo: "https://particle-effect.vercel.app/",
+      },
+      {
+        title: 'Open Academy "CRA"',
+        image: "capture (4)",
+        linkRepo: "https://github.com/tomasdetloging/OpenAcademy-ReactApp",
+        linkDemo: "https://open-academy-react-app.vercel.app/",
+      },
+      {
+        title: 'Open Academy "NextJs"',
+        image: "capture (5)",
+        linkRepo: "https://github.com/tomasdetloging/openacademy-nextjs",
+        linkDemo: "https://open-academy.vercel.app/",
+      },
+      {
+        title: "Youtube Clone",
+        image: "capture (6)",
+        linkRepo: "https://github.com/tomasdetloging/Youtube-Clone",
+        linkDemo: "https://youtube-clone-inky.vercel.app/",
+      },
+    ],
   },
   about: {
     aboutHeading: "Acerca de mí",

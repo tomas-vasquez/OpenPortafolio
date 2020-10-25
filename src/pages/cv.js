@@ -150,7 +150,7 @@ export default function cv() {
         </section>
         {/*//section*/}
 
-        <section class="section experiences-section">
+        {/* <section class="section experiences-section">
           <h2 class="section-title">
             <span class="icon-holder">
               <Icons icon="briefcase" />
@@ -159,36 +159,11 @@ export default function cv() {
           </h2>
 
           <div class="item">
-            <div class="meta">
-              <div class="upper-row">
-                <h3 class="job-title">Freelancer</h3>
-                <div class="time">2019 - Present</div>
-              </div>
-              {/*//upper-row*/}
-              <div class="company"></div>
-            </div>
-            {/*//meta*/}
             <div class="details">
-              <p>
-                Describe your role here lorem ipsum dolor sit amet, consectetuer
-                adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                Cum sociis natoque penatibus et magnis dis parturient montes,
-                nascetur ridiculus mus. Donec quam felis, ultricies nec,
-                pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-                enim. Donec pede justo.
-              </p>
-              <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi architecto beatae
-                vitae dicta sunt explicabo.
-              </p>
+              <p>(sin experiencia trabajndo en empresas)</p>
             </div>
-            {/*//details*/}
           </div>
-          {/*//item*/}
-        </section>
-        {/*//section*/}
+        </section> */}
 
         <section class="section projects-section">
           <h2 class="section-title">
