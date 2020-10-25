@@ -75,6 +75,8 @@ module.exports = {
     portfolioHeading2: "Repositorios",
     portfolioButtomText2: "Ver todo",
 
+    linkGitHub: "https://github.com/tomasdetloging",
+
     deploys: [
       {
         title: "Open Portafolio",

@@ -64,7 +64,7 @@ export default function Portfolio() {
   console.log(imageDeploys);
   const portfolioHeading = portfolio.portfolioHeading;
   const portfolioHeading2 = portfolio.portfolioHeading2;
-  const portfolioButtomText = portfolio.portfolioButtomText;
+  const linkGitHub = portfolio.linkGitHub;
   const portfolioButtomText2 = portfolio.portfolioButtomText2;
   const deploys = portfolio.deploys;
 
@@ -82,17 +82,7 @@ export default function Portfolio() {
             />
           ))}
         </div>
-        <div className="d-flex mb-5">
-          <a
-            href={"hola"}
-            className="btn btn-outline-secondary btn-lg mx-auto"
-            role="link"
-            aria-label="view all posts"
-          >
-            <Icons icon="github" className="mr-2" />
-            {portfolioButtomText}
-          </a>
-        </div>
+        <div className="d-flex mb-3"></div>
 
         <Separator title={portfolioHeading2} dark />
         <div class="card-columns py-4">
@@ -103,12 +93,12 @@ export default function Portfolio() {
 
         <div className="d-flex">
           <a
-            href={"hola"}
+            href={linkGitHub}
             className="btn btn-outline-secondary btn-lg mx-auto"
             role="link"
             aria-label="view all posts"
           >
-            <Icons icon="vercel" className="mr-2" />
+            <Icons icon="github" className="mr-2" />
             {portfolioButtomText2}
           </a>
         </div>
