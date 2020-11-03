@@ -47,13 +47,13 @@ module.exports = {
         url: "mailto:tomasdetloging@gmail.com",
       },
     ],
-    buttomText: "Más acerca de mí",
+    buttomText: "More about me",
   },
 
   navbar: {
     links: [
       {
-        title: "Inicio",
+        title: "Home",
         href: "/",
       },
       {
@@ -69,11 +69,11 @@ module.exports = {
   },
 
   portfolio: {
-    portfolioHeading: "Proyectos",
-    portfolioButtomText: "Ver todo",
+    portfolioHeading: "Proyects",
+    portfolioButtomText: "See all",
 
     portfolioHeading2: "Repositorios",
-    portfolioButtomText2: "Ver todo",
+    portfolioButtomText2: "See all",
 
     linkGitHub: "https://github.com/tomasdetloging",
 
@@ -114,17 +114,23 @@ module.exports = {
         linkRepo: "https://github.com/tomasdetloging/Youtube-Clone",
         linkDemo: "https://youtube-clone-inky.vercel.app/",
       },
+      {
+        title: "Open Social Network",
+        image: "capture (7)",
+        linkRepo: "https://github.com/tomasdetloging/social-network-v123",
+        linkDemo: "https://social-network-v123.vercel.app/",
+      },
     ],
   },
   about: {
-    aboutHeading: "Acerca de mí",
+    aboutHeading: "About me",
     aboutDescription:
-      "Mi nombre es Tomás Vásquez y estoy especializado en el desarrollo y programación de aplicaciones web. Comensé mi formación académica en la univeridad estudiando Ing. Informática y después estudiando de manera autodidacta en plataformas de educación online, primero en EDteam y luego en Platzi, que me ayudaron a conseguir trabajo de manera remota y eventual en empresas como NetSoft, NullCode, Team y muchas otras más. En estos momentos siento que ha llegado el momento de cambiar de aires y llevar a cabo una nueva experiencia laboral. Sin duda, creo que su compañia es la perfecta para lograrlo.",
+      "My name is Tomás Vásquez and I am specialized in the development and programming of web applications. I began my academic training at the university studying Computer Science and later studying self-taught in online education platforms, first in EDteam and then in Platzi, which helped me to get work remotely and eventually in companies like NetSoft, NullCode, Team and many more. At this time I feel that the time has come to change of scene and carry out a new work experience. Without a doubt, I believe that your company is the perfect one to achieve it.",
     picUrl: "https://github.com/tomasdetloging.png",
   },
   blog: {
     blogHeading: "Posts",
-    blogButtomText: "Ver todos mis posts",
+    blogButtomText: "See all posts",
   },
   skills: {
     skillsHeading: "Skills",
@@ -159,22 +165,24 @@ module.exports = {
   },
 
   contactMe: {
-    contactMeTitle: "Contáctame",
+    contactMeTitle: "Contact me",
     contactMeText:
-      'Puedes enviarme un correo a la dirección: <a href="mailto:tomasdetloging@gmail.com">tomasdetloging@gmail.com</a><br /> o también puedes contactarme mediante mis redes sociales:',
+      'You can send me an email to the address: <a href="mailto:tomasdetloging@gmail.com">tomasdetloging@gmail.com</a><br /> or you can also contact me through my social networks:',
   },
   footer: {
-    locationTitle: "Mi ubicación",
-    location: "Barrio Estacion Argentina  # 456 \n - Santa Cruz - Bolivia",
-    socialLinksTitle: "Mis redes",
-    aboutTitle: "Acerca de Open-Portfolio",
-    about: "Este portafolio es de código abierto... clona el repositorio:",
+    locationTitle: "My location",
+    location:
+      "Neighborhood Estación Argentina  # 456 \n - Santa Cruz - Bolivia",
+    socialLinksTitle: "My social networks",
+    aboutTitle: "About Open-Portfolio",
+    about:
+      'This portfolio is open source... clone the repository: <a href="https://github.com/tomasdetloging/OpenPortafolio">open-portafolio</a>',
   },
   wathsappWidged: {
     buttoms: [
       {
         href: "https://www.twitter.com/_tomasvasquez_",
-        tooltip: "Mi Twitter",
+        tooltip: "My Twitter",
         style: {
           backgroundColor: "#17a2b8",
           color: "rgb(250, 250, 250)",
@@ -183,7 +191,7 @@ module.exports = {
       },
       {
         href: "mailto:tomasdetloging@gmail.com",
-        tooltip: "Enviar correo",
+        tooltip: "Send email",
         style: {
           backgroundColor: "#117a8b",
           color: "rgb(250, 250, 250)",
@@ -192,7 +200,7 @@ module.exports = {
       },
       {
         href: "https://api.whatsapp.com/send?phone=59177649384",
-        tooltip: "Enviar mensage",
+        tooltip: "Send message",
         style: {
           backgroundColor: "#28a745",
           color: "rgb(250, 250, 250)",

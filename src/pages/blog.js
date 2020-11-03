@@ -11,7 +11,7 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title="All posts">
       <SEO title="All posts" />
-      <section>
+      <section className="mb-4">
         <div className="container bg-white" fluid>
           <div class="card-columns py-4">
             {posts.length !== 0 ? (

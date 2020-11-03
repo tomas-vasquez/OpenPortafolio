@@ -82,7 +82,9 @@ export default function Portfolio() {
             />
           ))}
         </div>
-        <div className="d-flex mb-3"></div>
+        <div className="d-flex mb-3">
+          
+        </div>
 
         <Separator title={portfolioHeading2} dark />
         <div class="card-columns py-4">

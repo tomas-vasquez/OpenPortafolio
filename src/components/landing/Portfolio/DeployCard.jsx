@@ -22,11 +22,11 @@ export default function DeployCard({ proyect, image }) {
           className="btn btn-secondary mr-2 mb-md-2 mb-xl-0 "
         >
           <Icons icon="github" className="mr-2" />
-          ver código
+          view source
         </a>
         <a href={proyect.linkDemo} target="blank2" className="btn btn-info">
           <Icons icon="globe" className="mr-2" />
-          ver en navegador
+          view in browser
         </a>
       </div>
     </div>

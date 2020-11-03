@@ -42,15 +42,7 @@ export default function Footer() {
                 {footer.aboutTitle}
               </h5>
               <p className="m-0">
-                {footer.about}{" "}
-                <a
-                  rel="noopener"
-                  href="https://github.com/tomasdetloging/open-portafolio"
-                  aria-label="My GitHub"
-                  style={{ textDecoration: "underline", color: "white" }}
-                >
-                  open-portafolio
-                </a>
+                <p dangerouslySetInnerHTML={{ __html: footer.about }} />
               </p>
             </div>
           </div>
