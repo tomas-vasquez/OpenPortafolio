@@ -125,7 +125,7 @@ module.exports = {
 
       {
         title: "Simple Crud Postgres",
-        image: "capture ()",
+        image: "capture (8)",
         linkRepo: "https://github.com/tomasdetloging/simple-crud-postgre",
         linkDemo: "https://simple-crud-postgree.herokuapp.com/",
       },
