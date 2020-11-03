@@ -79,6 +79,19 @@ module.exports = {
 
     deploys: [
       {
+        title: 'Open Academy "CRA"',
+        image: "capture (4)",
+        linkRepo: "https://github.com/tomasdetloging/OpenAcademy-ReactApp",
+        linkDemo: "https://open-academy-react-app.vercel.app/",
+      },
+
+      {
+        title: "Open Social Network",
+        image: "capture (7)",
+        linkRepo: "https://github.com/tomasdetloging/social-network-v123",
+        linkDemo: "https://social-network-v123.vercel.app/",
+      },
+      {
         title: "Open Portafolio",
         image: "capture (2)",
         linkRepo: "https://github.com/tomasdetloging/OpenPortafolio",
@@ -96,12 +109,7 @@ module.exports = {
         linkRepo: "https://github.com/tomasdetloging/",
         linkDemo: "https://particle-effect.vercel.app/",
       },
-      {
-        title: 'Open Academy "CRA"',
-        image: "capture (4)",
-        linkRepo: "https://github.com/tomasdetloging/OpenAcademy-ReactApp",
-        linkDemo: "https://open-academy-react-app.vercel.app/",
-      },
+
       {
         title: 'Open Academy "NextJs"',
         image: "capture (5)",
@@ -114,11 +122,12 @@ module.exports = {
         linkRepo: "https://github.com/tomasdetloging/Youtube-Clone",
         linkDemo: "https://youtube-clone-inky.vercel.app/",
       },
+
       {
-        title: "Open Social Network",
-        image: "capture (7)",
-        linkRepo: "https://github.com/tomasdetloging/social-network-v123",
-        linkDemo: "https://social-network-v123.vercel.app/",
+        title: "Simple Crud Postgres",
+        image: "capture ()",
+        linkRepo: "https://github.com/tomasdetloging/simple-crud-postgre",
+        linkDemo: "https://simple-crud-postgree.herokuapp.com/",
       },
     ],
   },

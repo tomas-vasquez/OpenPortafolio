@@ -4,7 +4,7 @@ import Image from "gatsby-image";
 
 export default function DeployCard({ proyect, image }) {
   return (
-    <div className="card mb-4 shadow">
+    <div className="card mb-4 shadow border-1">
       <Image
         fluid={image?.childImageSharp.fluid}
         alt={`${proyect.title}`}
@@ -22,11 +22,11 @@ export default function DeployCard({ proyect, image }) {
           className="btn btn-secondary mr-2 mb-md-2 mb-xl-0 "
         >
           <Icons icon="github" className="mr-2" />
-          view source
+          source
         </a>
         <a href={proyect.linkDemo} target="blank2" className="btn btn-info">
           <Icons icon="globe" className="mr-2" />
-          view in browser
+          see in browser
         </a>
       </div>
     </div>

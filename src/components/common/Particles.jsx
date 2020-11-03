@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import Particles from "react-particles-js";
+// import Particles from "react-particles-js";
 
 export default class particles extends Component {
   constructor() {
@@ -37,7 +37,7 @@ export default class particles extends Component {
         }}
         className="fixed-top bgstyle m-0"
       >
-        <Particles
+        {/* <Particles
           height={this.state.height}
           width={this.state.width}
           params={{
@@ -60,7 +60,7 @@ export default class particles extends Component {
               },
             },
           }}
-        />
+        /> */}
       </div>
     );
   }
