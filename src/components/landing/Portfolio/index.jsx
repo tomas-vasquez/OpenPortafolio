@@ -77,19 +77,17 @@ export default function Portfolio() {
           {deploys.map((repo, key) => (
             <DeployCard
               key={key}
-              proyect={repo}
+              project={repo}
               image={imageDeploys.find((image) => image.name === repo.image)}
             />
           ))}
         </div>
-        <div className="d-flex mb-3">
-          
-        </div>
+        <div className="d-flex mb-3"></div>
 
         <Separator title={portfolioHeading2} dark />
         <div class="card-columns py-4">
           {repos.map((repo, key) => (
-            <PortafolioCard key={key} proyect={repo} />
+            <PortafolioCard key={key} project={repo} />
           ))}
         </div>
 

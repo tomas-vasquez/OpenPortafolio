@@ -1,7 +1,7 @@
 module.exports = {
   defaultTitle: "Tomás Dev",
   defaultDescription:
-    "portafolio de proyectos de un desarrollador o programador web en de bolivia",
+    "portafolio de projectos de un desarrollador o programador web en de bolivia",
   author: {
     name: `Tomás Vásquez`,
   },
@@ -21,11 +21,11 @@ module.exports = {
       //   icon: "youtube",
       //   url: "https://www.facebook.com/tomasdetloging",
       // },
-      // {
-      //   id: 2,
-      //   icon: "linkedin",
-      //   url: "https://www.linkedin.com/in/tomás-vásquez-8a45471b4",
-      // },
+      {
+        id: 2,
+        icon: "linkedin",
+        url: "https://www.linkedin.com/in/tomás-vásquez-8a45471b4",
+      },
       // {
       //   id: 3,
       //   icon: "instagram",
@@ -69,10 +69,10 @@ module.exports = {
   },
 
   portfolio: {
-    portfolioHeading: "Proyects",
+    portfolioHeading: "projects",
     portfolioButtomText: "See all",
 
-    portfolioHeading2: "Repositorios",
+    portfolioHeading2: "repositories",
     portfolioButtomText2: "See all",
 
     linkGitHub: "https://github.com/tomasdetloging",

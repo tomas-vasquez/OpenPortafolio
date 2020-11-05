@@ -34,29 +34,39 @@ export default function cv() {
             </li>
             <li class="email">
               <Icons icon="gmail" className="mr-3" />
-              tomasdetloging@gmail.com
+              <a href="mailto:tomasdetloging@gmail.com">
+                tomasdetloging@gmail.com
+              </a>
             </li>
             <li class="phone">
               <Icons icon="wathsapp" className="mr-3" />
-              +591 77649384
+              <a href="https://api.whatsapp.com/send?phone=59177649384">
+                +591 77649384
+              </a>
             </li>
             <li class="website">
               <Icons icon="hear" className="mr-3" />
-              https://tomas-dev.vercel.app
+              <a href="https://tomas-dev.vercel.app">https://tomas-dev</a>
             </li>
-            {/* <li class="linkedin">
-              <i class="fab fa-linkedin-in"></i
-              ><a href="#" target="_blank">linkedin.com/in/alandoe</a>
-            </li> */}
+            <li class="linkedin">
+              <Icons icon="linkedin" className="mr-3" />
+
+              <a
+                href="https://www.linkedin.com/in/tomás-vásquez-8a45471b4"
+                target="_blank"
+              >
+                linkedin.com/tomas
+              </a>
+            </li>
             <li class="github">
               <Icons icon="github" className="mr-3" />
-              <a href="https:" target="_blank">
+              <a href="https://github.com/tomasdetloging" target="_blank">
                 github.com/tomasdetloging
               </a>
             </li>
             <li class="twitter">
               <Icons icon="twitter" className="mr-3" />
-              <a href="https://twitter.com/3rdwave_themes" target="_blank">
+              <a href="https://www.twitter.com/_tomasvasquez_" target="_blank">
                 @_tomasvasquez_
               </a>
             </li>
@@ -64,42 +74,42 @@ export default function cv() {
         </div>
         {/*//contact-container*/}
         <div class="education-container container-block">
-          <h2 class="container-block-title">Educación:</h2>
+          <h2 class="container-block-title"> Education: </h2>
           <div class="item">
-            <h4 class="degree">Ing. Informática</h4>
-            <h5 class="meta">U.G.R.M. - F.I.C.H.</h5>
-            <div class="time">2015 - 2018</div>
+            <h4 class="degree"> Eng. ES </h4>
+            <h5 class="meta"> U.G.R.M. - F.I.C.H. </h5>
+            <div class="time"> 2015 - 2018 </div>
           </div>
-          {/*//item*/}
+          {/*//Article*/}
           <div class="item">
-            <h4 class="degree">Desarrollo de software</h4>
-            <h5 class="meta">EDteam</h5>
-            <div class="time">2018 - 2019</div>
+            <h4 class="degree"> Software development </h4>
+            <h5 class="meta"> EDteam </h5>
+            <div class="time"> 2018 - 2019 </div>
           </div>
-          {/*//item*/}
+          {/*//Article*/}
           <div class="item">
-            <h4 class="degree">Desarrollo de software</h4>
-            <h5 class="meta">en Platzi</h5>
-            <div class="time">2020 - hasta el dia de hoy</div>
+            <h4 class="degree"> Software development </h4>
+            <h5 class="meta"> Platzi </h5>
+            <div class="time"> 2020 - until today </div>
           </div>
           {/*//item*/}
         </div>
         {/*//education-container*/}
 
         <div class="languages-container container-block">
-          <h2 class="container-block-title">Lenguages:</h2>
+          <h2 class="container-block-title">Idioms:</h2>
           <ul class="list-unstyled interests-list">
             <li>
-              Español <span class="lang-desc">(Nativo)</span>
+              Espanish <span class="lang-desc">(native)</span>
             </li>
             <li>
-              Inglés <span class="lang-desc">Intermedio - avanzado</span>
+              English <span class="lang-desc">basic - middle</span>
             </li>
           </ul>
         </div>
         {/*//interests*/}
 
-        <div class="interests-container container-block">
+        {/* <div class="interests-container container-block">
           <h2 class="container-block-title">Intereses:</h2>
           <ul class="list-unstyled interests-list">
             <li>Gatgets</li>
@@ -110,7 +120,7 @@ export default function cv() {
             <li>Juegos Online</li>
             <li></li>
           </ul>
-        </div>
+        </div> */}
         {/*//interests*/}
       </div>
       {/*//sidebar-wrapper*/}
@@ -121,7 +131,7 @@ export default function cv() {
             <span class="icon-holder">
               <Icons icon="user" />
             </span>
-            Acerca de mí:
+            About me:
           </h2>
           <div class="meta">
             <div class="upper-row">
@@ -134,53 +144,54 @@ export default function cv() {
 
           <div class="summary">
             <p>
-              Mi nombre es Tomás Vásquez y estoy especializado en el desarrollo
-              y programación de aplicaciones web. Comensé mi formación académica
-              en la univeridad estudiando Ing. Informática y después estudiando
-              de manera autodidacta en plataformas de educación online, primero
-              en EDteam y luego en Platzi, que me ayudaron a conseguir trabajo
-              de manera remota y eventual en empresas como NetSoft, NullCode,
-              Team y muchas otras más. En estos momentos siento que ha llegado
-              el momento de cambiar de aires y llevar a cabo una nueva
-              experiencia laboral. Sin duda, creo que su compañia es la perfecta
-              para lograrlo.
+              My name is Tomás Vásquez and I am specialized in the development
+              and programming of web applications. I began my academic training
+              at the university studying Computer Science and later studying
+              self-taught in online education platforms, first in EDteam and
+              then in Platzi, which helped me to get work remotely and
+              eventually in companies like NetSoft, NullCode, Team and many
+              more. At this time I feel that the time has come to change of
+              scene and carry out a new work experience. Without a doubt, I
+              believe that your company is the perfect one to achieve it.
             </p>
           </div>
           {/*//summary*/}
         </section>
         {/*//section*/}
 
-        {/* <section class="section experiences-section">
+        <section class="section experiences-section">
           <h2 class="section-title">
             <span class="icon-holder">
               <Icons icon="briefcase" />
             </span>
-            Experiencias:
+            Experience:
           </h2>
 
           <div class="item">
             <div class="details">
-              <p>(sin experiencia trabajndo en empresas)</p>
+              <p>(no experience working in companies)</p>
             </div>
           </div>
-        </section> */}
+        </section>
 
         <section class="section projects-section">
           <h2 class="section-title">
             <span class="icon-holder">
               <Icons icon="archive" />
             </span>
-            Proyectos personales:
+            Personal projects:
           </h2>
           <div class="intro">
             <p>
-              Puedes ver mis proyectos personales en mi página web personal:
+              You can see my personal projects on my personal website:
               <br />
-              <a href="https://tomas-dev.com">https://tomas-dev.vercel.app</a>
+              <a href="https://tomas-dev.vercel.app">
+                https://tomas-dev.vercel.app
+              </a>
             </p>
 
             <p>
-              O directo desde mi repositorio de Github:
+              Or direct from my Github repository:
               <br />
               <a href="https://github.com/tomasdetloging">
                 https://github.com/tomasdetloging
@@ -196,21 +207,10 @@ export default function cv() {
               <Icons icon="rocket" />
               <i class="fas fa-rocket"></i>
             </span>
-            Habilidades y competencias:
+            Skills and competencies:
           </h2>
           <div class="skillset">
             <br />
-
-            <div class="item">
-              <h3 class="level-title">Javascript</h3>
-              <div class="progress level-bar">
-                <div
-                  class="progress-bar theme-progress-bar"
-                  role="progressbar"
-                  style={{ width: "90%" }}
-                ></div>
-              </div>
-            </div>
             {/*//item*/}
             <div class="item">
               <h3 class="level-title">React</h3>
@@ -268,17 +268,7 @@ export default function cv() {
                 ></div>
               </div>
             </div>
-            {/*//item*/}
-            <div class="item">
-              <h3 class="level-title">Php - Laravel</h3>
-              <div class="progress level-bar">
-                <div
-                  class="progress-bar theme-progress-bar"
-                  role="progressbar"
-                  style={{ width: "90%" }}
-                ></div>
-              </div>
-            </div>
+
             {/*//item*/}
             <br />
             {/*//item*/}
