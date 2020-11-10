@@ -9,7 +9,7 @@ module.exports = {
     FirstName: "Tomás",
     MiddleName: "",
     LastName: "Vásquez",
-    devDesc: "| Freelancer | Web Developer | Designer | Potterhead ",
+    devDesc: "| Freelancer | Web Developer | Designer | Vimlover ",
     icons: [
       {
         id: 0,
