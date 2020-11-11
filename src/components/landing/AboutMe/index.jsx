@@ -54,7 +54,7 @@ export default function AboutMe() {
       </div>
       <div className="d-flex mt-3">
         <Link
-          className="btn btn-outline-light btn-lg mr-3 ml-auto"
+          className="btn btn-outline-light btn-md mr-3 ml-auto"
           to="/cv"
           role="button"
           aria-label="Learn more about me"
@@ -63,7 +63,7 @@ export default function AboutMe() {
           {aboutMeButtomText}
         </Link>
         <Link
-          className="btn btn-outline-light btn-lg mr-auto"
+          className="btn btn-outline-light btn-md mr-auto"
           to={`/${cvFileName}`}
           role="button"
           aria-label="Learn more about me"

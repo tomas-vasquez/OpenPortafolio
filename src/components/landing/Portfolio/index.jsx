@@ -93,7 +93,7 @@ export default function Portfolio() {
         <div className="d-flex">
           <a
             href={linkGitHub}
-            className="btn btn-outline-secondary btn-lg mx-auto"
+            className="btn btn-outline-secondary btn-md mx-auto"
             aria-label="view all posts"
           >
             <Icons icon="github" className="mr-2" />

@@ -49,7 +49,7 @@ export default function Blog() {
         <div className="d-flex">
           <Link
             to="/blog"
-            className="btn btn-outline-secondary btn-lg mx-auto"
+            className="btn btn-outline-secondary btn-md mx-auto"
             role="link"
             aria-label="view all posts"
           >
