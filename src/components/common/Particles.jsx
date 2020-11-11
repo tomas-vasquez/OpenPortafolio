@@ -18,8 +18,8 @@ export default function MyParticles() {
 
   const bg = data.file.childImageSharp.fluid;
 
-  const [width, setWidth] = useState(window.innerWidth);
-  const [height, setHeight] = useState(window.innerHeight);
+  const [width, setWidth] = useState(0);
+  const [height, setHeight] = useState(0);
   const [opacity, setOpacity] = useState(0);
 
   const scrollHandler = (e) => {
@@ -40,6 +40,8 @@ export default function MyParticles() {
   };
 
   useEffect(() => {
+    setHeight(height);
+    setWidth(width);
     window.addEventListener("resize", resizeHandler);
     window.addEventListener("scroll", scrollHandler);
   }, []);
