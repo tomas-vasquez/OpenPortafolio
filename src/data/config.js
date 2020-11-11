@@ -134,7 +134,7 @@ module.exports = {
   about: {
     aboutHeading: "About me",
     aboutDescription:
-      "My name is Tomás Vásquez and I am specialized in the development and programming of web applications. I began my academic training at the university studying Computer Science and later studying self-taught in online education platforms, first in EDteam and then in Platzi, which helped me to get work remotely and eventually in companies like NetSoft, NullCode, Team and many more. At this time I feel that the time has come to change of scene and carry out a new work experience. Without a doubt, I believe that your company is the perfect one to achieve it.",
+      "My name is Tomás Vásquez and I am specialized in the development and programming of web applications. I began my academic training at the university studying Informatics Engineering and later studying self-taught in online education platforms, first in EDteam and then in Platzi.I am currently looking to insert working in the technology area. I am very self-taught and I constantly look for new challenges that challenge my abilities and help me grow.",
     picUrl: "https://github.com/tomasdetloging.png",
     aboutMeButtomText: "See my CV",
   },

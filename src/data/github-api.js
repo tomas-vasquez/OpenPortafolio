@@ -1,7 +1,7 @@
 module.exports = githubApiQuery = `
 query($github_login: String!) {
 	user(login: $github_login) {
-		repositories(first: 20, orderBy: {field: STARGAZERS, direction: DESC}) {
+		repositories(first: 10, orderBy: {field: STARGAZERS, direction: DESC}) {
 			 nodes {
 				id
 				name

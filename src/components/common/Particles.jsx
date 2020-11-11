@@ -29,7 +29,7 @@ export default function MyParticles() {
     if (scrollY < mainHeight) {
       opacity = scrollY / mainHeight;
     } else {
-      opacity = 0.8;
+      opacity = 0.9;
     }
     setOpacity(opacity);
   };
@@ -44,13 +44,6 @@ export default function MyParticles() {
     window.addEventListener("resize", resizeHandler);
     window.addEventListener("scroll", scrollHandler);
   }, []);
-
-  /*
-  const componentWillUnmount = () => {
-    window.removeEventListener("scroll", this.scrollHandler);
-    window.removeEventListener("resize", this.resizeHandler);
-  };
-  */
 
   const ruleTreeSimple = (a, b, c) => {
     return Math.abs((b * c) / a);
