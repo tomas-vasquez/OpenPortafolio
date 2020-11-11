@@ -40,8 +40,7 @@ export default function MyParticles() {
   };
 
   useEffect(() => {
-    setHeight(height);
-    setWidth(width);
+    resizeHandler();
     window.addEventListener("resize", resizeHandler);
     window.addEventListener("scroll", scrollHandler);
   }, []);
@@ -63,9 +62,7 @@ export default function MyParticles() {
         id="home"
         style={{
           zIndex: -100,
-
           height: height,
-          //backgroundImage: `url(${require("../../assets/img/background.jpg")})`,
           backgroundSize: "contain",
         }}
         className="fixed-top m-0"
@@ -75,7 +72,6 @@ export default function MyParticles() {
           style={{
             zIndex: -100,
             height: height,
-            //backgroundImage: `url(${require("../../assets/img/background.jpg")})`,
           }}
           fluid={bg}
         />
@@ -108,10 +104,10 @@ export default function MyParticles() {
                 value: 3,
               },
               opacity: {
-                value: 0.5,
+                value: 0.4,
               },
               line_linked: {
-                opacity: 0.2,
+                opacity: 0.1,
               },
               move: {
                 speed: 1,
