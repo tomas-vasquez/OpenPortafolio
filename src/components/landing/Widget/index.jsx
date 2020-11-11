@@ -10,19 +10,25 @@ export default function Index() {
   const [fade, setfade] = useState(false);
   const [close, setclose] = useState(false);
 
-  useEffect(() => {
-    window.addEventListener("scroll", (e) => {
-      const scrollY = e.currentTarget.scrollY;
-      const main = document.getElementsByTagName("main")[0];
-      const mainHeight = main.scrollHeight;
+  const scrollHandler = (e) => {
+    const scrollY = e.currentTarget.scrollY;
+    const main = document.getElementsByTagName("main")[0];
+    const mainHeight = main.scrollHeight;
 
-      if (scrollY && mainHeight && scrollY < mainHeight && scrollY > 100) {
-        setfade(true);
-      } else {
-        setfade(false);
-      }
-    });
-  });
+    if (scrollY && mainHeight && scrollY < mainHeight && scrollY > 100) {
+      setfade(true);
+    } else {
+      setfade(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", scrollHandler);
+
+    return () => {
+      window.removeEventListener("scroll", scrollHandler);
+    };
+  }, []);
 
   return (
     <Fade

@@ -48,6 +48,10 @@ export default function MyParticles() {
     resizeHandler();
     window.addEventListener("resize", resizeHandler);
     window.addEventListener("scroll", scrollHandler);
+    return () => {
+      window.removeEventListener("resize", resizeHandler);
+      window.removeEventListener("scroll", scrollHandler);
+    };
   }, []);
 
   const ruleTreeSimple = (a, b, c) => {
