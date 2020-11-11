@@ -46,11 +46,11 @@ const NavbarLinks = ({ location, desktop }) => {
             {desktop ? <span className="my-0 pr-4 text-white">|</span> : <hr />}
           </>
         )}
-        {navbar.links.map((link) => (
-          <Link to={link.href} className="lead pr-4">
+        {navbar.links.map((link, key) => (
+          <a href={link.href} key={key} className="lead pr-4">
             {link.icon && <Icons icon={link.icon} className="mr-2" />}
             {link.title}
-          </Link>
+          </a>
         ))}
         <Link to="" className="lead pr-4"></Link>
       </div>

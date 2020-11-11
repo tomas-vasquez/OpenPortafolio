@@ -28,8 +28,8 @@ const getColor = function (language) {
 export default function languajes({ languages }) {
   return (
     <>
-      {languages.nodes.map((lang) => (
-        <small className="mr-2">
+      {languages.nodes.map((lang, key) => (
+        <small key={key} className="mr-2">
           <small style={{ color: getColor(lang.name) }}>
             <FontAwesomeIcon icon={faCircle} />{" "}
           </small>

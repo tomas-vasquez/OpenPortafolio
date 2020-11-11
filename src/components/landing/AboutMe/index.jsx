@@ -53,7 +53,7 @@ export default function AboutMe() {
       <div className="d-flex">
         <Link
           className="btn btn-outline-light btn-lg mx-auto"
-          href="/cv"
+          to="/cv"
           role="button"
           aria-label="Learn more about me"
         >

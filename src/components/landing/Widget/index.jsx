@@ -37,11 +37,12 @@ export default function Index() {
     >
       <div className="fab-container">
         <ReactTooltip effect="solid" place="left" />
-        {wathsappWidged.buttoms.map((buttom) => (
+        {wathsappWidged.buttoms.map((buttom, key) => (
           <a
+            key={key}
             href={buttom.href}
             target="_black"
-            class="fab-item"
+            className="fab-item"
             data-tip={buttom.tooltip}
             style={buttom.style}
           >

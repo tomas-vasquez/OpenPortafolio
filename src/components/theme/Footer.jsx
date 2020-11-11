@@ -41,9 +41,10 @@ export default function Footer() {
               <h5 className="lead text-uppercase mb-3 d-none d-lg-block">
                 {footer.aboutTitle}
               </h5>
-              <p className="m-0">
-                <p dangerouslySetInnerHTML={{ __html: footer.about }} />
-              </p>
+              <p
+                className="m-0"
+                dangerouslySetInnerHTML={{ __html: footer.about }}
+              />
             </div>
           </div>
         </div>

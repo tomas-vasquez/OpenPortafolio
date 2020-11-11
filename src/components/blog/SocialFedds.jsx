@@ -19,16 +19,6 @@ export default function SocialFedds() {
           <div className="row timepast">1 day ago</div>
         </div>
       </aside>
-      {/* 
-      <aside className="mb-4 widget widget-instagram">
-        <div className="widget-instagram-inner">
-          <h5 className="widget-meta">
-            <i className="fab fa-twitter mr-2"></i>instagram feed{" "}
-            <a href="http://twitter.com/chivalricblog">@tomasdetloging</a>
-          </h5>
-          <div id="instafeed"></div>
-        </div>
-      </aside> */}
     </>
   );
 }

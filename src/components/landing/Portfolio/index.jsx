@@ -61,7 +61,6 @@ export default function Portfolio() {
   const repos = data.allGithubData.nodes[0].data.user.repositories.nodes;
   const imageDeploys = data.allFile.nodes;
 
-  console.log(imageDeploys);
   const portfolioHeading = portfolio.portfolioHeading;
   const portfolioHeading2 = portfolio.portfolioHeading2;
   const linkGitHub = portfolio.linkGitHub;
@@ -73,7 +72,7 @@ export default function Portfolio() {
       <div className="container">
         <Separator title={portfolioHeading} dark />
 
-        <div class="card-columns py-4">
+        <div className="card-columns py-4">
           {deploys.map((repo, key) => (
             <DeployCard
               key={key}
@@ -85,7 +84,7 @@ export default function Portfolio() {
         <div className="d-flex mb-3"></div>
 
         <Separator title={portfolioHeading2} dark />
-        <div class="card-columns py-4">
+        <div className="card-columns py-4">
           {repos.map((repo, key) => (
             <PortafolioCard key={key} project={repo} />
           ))}

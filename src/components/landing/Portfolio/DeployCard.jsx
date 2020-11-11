@@ -5,15 +5,17 @@ import Image from "gatsby-image";
 export default function DeployCard({ project, image }) {
   return (
     <div className="card mb-4 shadow border-1">
-      <Image
-        fluid={image?.childImageSharp.fluid}
-        alt={`${project.title}`}
-        className="img-responsive"
-        style={{
-          borderTopLeftRadius: "0.5rem",
-          borderTopRightRadius: "0.5rem",
-        }}
-      />
+      {image && (
+        <Image
+          fluid={image.childImageSharp.fluid}
+          alt={`${project.title}`}
+          className="img-responsive"
+          style={{
+            borderTopLeftRadius: "0.5rem",
+            borderTopRightRadius: "0.5rem",
+          }}
+        />
+      )}
       <div className="card-body p-2">
         <p className="lead px-1 mb-2">{project.title}</p>
         <a

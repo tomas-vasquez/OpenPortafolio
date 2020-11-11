@@ -55,8 +55,9 @@ export default function AuthorBlog() {
         </Link>
       </div>
       <div className="text-center pt-3 pb-5">
-        {icons.map((icon) => (
+        {icons.map((icon, key) => (
           <a
+            key={key}
             className="socialicons text-muted"
             target="_blank"
             rel="noopener noreferrer"

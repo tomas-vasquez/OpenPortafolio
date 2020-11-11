@@ -11,6 +11,11 @@ export default function MyParticles() {
           fluid {
             ...GatsbyImageSharpFluid
           }
+          original {
+            width
+            height
+            src
+          }
         }
       }
     }
