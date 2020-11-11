@@ -1,9 +1,10 @@
 import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql, Link } from "gatsby";
 
 //config
 import { about } from "../../../data/config";
 import Separator from "../../common/Separator";
+import Icons from "../../common/Icons";
 
 export default function AboutMe() {
   const data = useStaticQuery(graphql`
@@ -25,6 +26,7 @@ export default function AboutMe() {
   const aboutDescription = about.aboutDescription;
   const aboutAvatar = about.picUrl;
   const aboutHeading = about.aboutHeading;
+  const aboutMeButtomText = about.aboutMeButtomText;
 
   return (
     <section className="page-section mb-0 bg-transparent text-light" id="about">
@@ -47,6 +49,16 @@ export default function AboutMe() {
             <p className="lead">{aboutDescription}</p>
           </div>
         </div>
+      </div>
+      <div className="d-flex">
+        <Link
+          className="btn btn-outline-light btn-lg mx-auto"
+          href="/cv"
+          role="button"
+          aria-label="Learn more about me"
+        >
+          {aboutMeButtomText}
+        </Link>
       </div>
     </section>
   );

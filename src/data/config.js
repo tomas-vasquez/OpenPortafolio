@@ -1,5 +1,5 @@
 module.exports = {
-  defaultTitle: "Tomás Dev",
+  defaultTitle: "tomas_dev",
   defaultDescription:
     "portafolio de projectos de un desarrollador o programador web en de bolivia",
   author: {
@@ -136,6 +136,7 @@ module.exports = {
     aboutDescription:
       "My name is Tomás Vásquez and I am specialized in the development and programming of web applications. I began my academic training at the university studying Computer Science and later studying self-taught in online education platforms, first in EDteam and then in Platzi, which helped me to get work remotely and eventually in companies like NetSoft, NullCode, Team and many more. At this time I feel that the time has come to change of scene and carry out a new work experience. Without a doubt, I believe that your company is the perfect one to achieve it.",
     picUrl: "https://github.com/tomasdetloging.png",
+    aboutMeButtomText: "See my CV",
   },
   blog: {
     blogHeading: "Posts",
