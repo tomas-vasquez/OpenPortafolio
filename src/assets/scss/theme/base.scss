@@ -16,6 +16,7 @@
   min-height: 800px;
   color: #fff;
   a {
+    text-decoration: underline;
     color: #fff;
   }
   .profile-container {
@@ -121,6 +122,9 @@
 }
 
 .main-wrapper {
+  a{
+    text-decoration: underline;
+  }
   background: #fff;
   padding: 60px;
   margin-right: 300px;
@@ -183,6 +187,7 @@
   }
 
   .project-title {
+    color: #007acc;;
     font-size: 16px;
     font-weight: 400;
     margin-top: 0;

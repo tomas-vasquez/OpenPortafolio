@@ -7,7 +7,12 @@ export default function cv() {
   const aboutAvatar = about.picUrl;
 
   return (
-    <div>
+    <div
+      style={{
+        minWidth: 764,
+        position: "absolute",
+      }}
+    >
       <Particles />
       <div className="sidebar-wrapper">
         <div className="profile-container mb-4">
@@ -343,36 +348,21 @@ export default function cv() {
           </h2>
 
           <div className="item">
-            <span className="project-title">
-              <a href="/" target="_blank" rel="noreferrer">
-                Git
-              </a>
-            </span>{" "}
-            -{" "}
+            <span className="project-title">Git</span> -{" "}
             <span className="project-tagline">
               intermediate experience using to manage and deploy my personal
               projects.
             </span>
           </div>
           <div className="item">
-            <span className="project-title">
-              <a href="/" target="_blank" rel="noreferrer">
-                Linux
-              </a>
-            </span>{" "}
-            -{" "}
+            <span className="project-title">Linux</span> -{" "}
             <span className="project-tagline">
               Daily use of the terminal and the operating system usually.
             </span>
           </div>
 
           <div className="item">
-            <span className="project-title">
-              <a href="/" target="_blank" rel="noreferrer">
-                Vim
-              </a>
-            </span>{" "}
-            -{" "}
+            <span className="project-title">Vim</span> -{" "}
             <span className="project-tagline">
               Favorite code editor that allows me to develop in a more agile and
               fast way.
@@ -380,12 +370,7 @@ export default function cv() {
           </div>
 
           <div className="item">
-            <span className="project-title">
-              <a href="/" target="_blank" rel="noreferrer">
-                English
-              </a>
-            </span>{" "}
-            -{" "}
+            <span className="project-title">English</span> -{" "}
             <span className="project-tagline">
               Intermediate level. Daily use in reading books, documentation and
               courses. Capacity to understand both oral and written, and to
