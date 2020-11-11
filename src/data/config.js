@@ -137,6 +137,8 @@ module.exports = {
       "My name is Tomás Vásquez and I am specialized in the development and programming of web applications. I began my academic training at the university studying Informatics Engineering and later studying self-taught in online education platforms, first in EDteam and then in Platzi.I am currently looking to insert working in the technology area. I am very self-taught and I constantly look for new challenges that challenge my abilities and help me grow.",
     picUrl: "https://github.com/tomasdetloging.png",
     aboutMeButtomText: "See my CV",
+    aboutMeButtomText2: "Download my CV",
+    cvFileName: "tomasdetloging@gmail.com.pdf",
   },
   blog: {
     blogHeading: "Posts",

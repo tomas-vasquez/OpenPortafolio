@@ -27,6 +27,8 @@ export default function AboutMe() {
   const aboutAvatar = about.picUrl;
   const aboutHeading = about.aboutHeading;
   const aboutMeButtomText = about.aboutMeButtomText;
+  const aboutMeButtomText2 = about.aboutMeButtomText2;
+  const cvFileName = about.cvFileName;
 
   return (
     <section className="page-section mb-0 bg-transparent text-light" id="about">
@@ -50,15 +52,24 @@ export default function AboutMe() {
           </div>
         </div>
       </div>
-      <div className="d-flex">
+      <div className="d-flex mt-3">
         <Link
-          className="btn btn-outline-light btn-lg mx-auto"
+          className="btn btn-outline-light btn-lg mr-3 ml-auto"
           to="/cv"
           role="button"
           aria-label="Learn more about me"
         >
           <Icons icon="file" className="mr-2" />
           {aboutMeButtomText}
+        </Link>
+        <Link
+          className="btn btn-outline-light btn-lg mr-auto"
+          to={`/${cvFileName}`}
+          role="button"
+          aria-label="Learn more about me"
+        >
+          <Icons icon="download" className="mr-2" />
+          {aboutMeButtomText2}
         </Link>
       </div>
     </section>
