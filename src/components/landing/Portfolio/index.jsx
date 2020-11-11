@@ -95,7 +95,6 @@ export default function Portfolio() {
           <a
             href={linkGitHub}
             className="btn btn-outline-secondary btn-lg mx-auto"
-            role="link"
             aria-label="view all posts"
           >
             <Icons icon="github" className="mr-2" />

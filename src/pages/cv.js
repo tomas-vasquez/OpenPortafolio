@@ -9,293 +9,390 @@ export default function cv() {
   return (
     <div>
       <Particles />
-
-      <div class="sidebar-wrapper">
-        <div class="profile-container">
+      <div className="sidebar-wrapper">
+        <div className="profile-container mb-4">
           <img
             style={{
-              width: 100,
-              height: 100,
+              width: 150,
+              height: 150,
             }}
             src={aboutAvatar}
             alt="tomas vasquez"
-            className="mx-auto rounded-circle mt-3 mt-md-0 mb-4 mb-md-0"
+            className="mx-auto rounded-circle mt-3 mt-md-0 mb-4"
           />
-          <h1 class="name">Tomás Vásquez</h1>
-          <h3 class="tagline">Web Developer</h3>
+          <h1 className="name">Tomás Vásquez</h1>
+          <h3 className="tagline">Web Developer</h3>
         </div>
-        {/*//profile-container*/}
 
-        <div class="contact-container container-block">
-          <ul class="list-unstyled contact-list">
-            <li class="email">
+        <div className="contact-container container-block">
+          <ul className="list-unstyled contact-list">
+            <li className="email">
               <Icons icon="pointer" className="mr-3" />
               Santa Cruz - Bolivia
             </li>
-            <li class="email">
+            <li className="email">
               <Icons icon="gmail" className="mr-3" />
               <a href="mailto:tomasdetloging@gmail.com">
                 tomasdetloging@gmail.com
               </a>
             </li>
-            <li class="phone">
+            <li className="phone">
               <Icons icon="wathsapp" className="mr-3" />
               <a href="https://api.whatsapp.com/send?phone=59177649384">
                 +591 77649384
               </a>
             </li>
-            <li class="website">
+            <li className="website">
               <Icons icon="hear" className="mr-3" />
               <a href="https://tomas-dev.vercel.app">https://tomas-dev</a>
             </li>
-            <li class="linkedin">
+            <li className="linkedin">
               <Icons icon="linkedin" className="mr-3" />
 
               <a
                 href="https://www.linkedin.com/in/tomás-vásquez-8a45471b4"
                 target="_blank"
+                rel="noreferrer"
               >
                 linkedin.com/tomas
               </a>
             </li>
-            <li class="github">
+            <li className="github">
               <Icons icon="github" className="mr-3" />
-              <a href="https://github.com/tomasdetloging" target="_blank">
-                github.com/tomasdetloging
+              <a
+                href="https://github.com/tomasdetloging"
+                target="_blank"
+                rel="noreferrer"
+              >
+                github.com/tomas
               </a>
             </li>
-            <li class="twitter">
+            <li className="twitter">
               <Icons icon="twitter" className="mr-3" />
-              <a href="https://www.twitter.com/_tomasvasquez_" target="_blank">
+              <a
+                href="https://www.twitter.com/_tomasvasquez_"
+                target="_blank"
+                rel="noreferrer"
+              >
                 @_tomasvasquez_
               </a>
             </li>
           </ul>
         </div>
         {/*//contact-container*/}
-        <div class="education-container container-block">
-          <h2 class="container-block-title"> Education: </h2>
-          <div class="item">
-            <h4 class="degree"> Eng. ES </h4>
-            <h5 class="meta"> U.G.R.M. - F.I.C.H. </h5>
-            <div class="time"> 2015 - 2018 </div>
+        <div className="education-container container-block">
+          <h2 className="container-block-title"> Education: </h2>
+          <div className="item">
+            <h4 className="degree"> Eng. ES </h4>
+            <h5 className="meta"> U.G.R.M. - F.I.C.H. </h5>
+            <div className="time"> 2015 - 2018 </div>
           </div>
           {/*//Article*/}
-          <div class="item">
-            <h4 class="degree"> Software development </h4>
-            <h5 class="meta"> EDteam </h5>
-            <div class="time"> 2018 - 2019 </div>
+          <div className="item">
+            <h4 className="degree"> Software development </h4>
+            <h5 className="meta"> EDteam </h5>
+            <div className="time"> 2018 - 2019 </div>
           </div>
           {/*//Article*/}
-          <div class="item">
-            <h4 class="degree"> Software development </h4>
-            <h5 class="meta"> Platzi </h5>
-            <div class="time"> 2020 - until today </div>
+          <div className="item">
+            <h4 className="degree"> Software development </h4>
+            <h5 className="meta"> Platzi </h5>
+            <div className="time"> 2020 - until today </div>
           </div>
           {/*//item*/}
         </div>
         {/*//education-container*/}
 
-        <div class="languages-container container-block">
-          <h2 class="container-block-title">Idioms:</h2>
-          <ul class="list-unstyled interests-list">
+        <div className="languages-container container-block">
+          <h2 className="container-block-title">Idioms:</h2>
+          <ul className="list-unstyled interests-list">
             <li>
-              Espanish <span class="lang-desc">(native)</span>
+              Espanish <span className="lang-desc">(native)</span>
             </li>
             <li>
-              English <span class="lang-desc">basic - middle</span>
+              English <span className="lang-desc">basic - middle</span>
             </li>
           </ul>
         </div>
-        {/*//interests*/}
-
-        {/* <div class="interests-container container-block">
-          <h2 class="container-block-title">Intereses:</h2>
-          <ul class="list-unstyled interests-list">
-            <li>Gatgets</li>
-            <li>Tecnología web</li>
-            <li>Tecnología móvil</li>
-            <li>Diseño gráfico</li>
-            <li>Literatura Zombie</li>
-            <li>Juegos Online</li>
-            <li></li>
+        <div className="languages-container container-block">
+          <h2 className="container-block-title">Interests</h2>
+          <ul className="list-unstyled interests-list">
+            <li> Gatgets </li>
+            <li> Web technology </li>
+            <li> Mobile technology </li>
+            <li> Graphic design </li>
           </ul>
-        </div> */}
-        {/*//interests*/}
+        </div>
       </div>
-      {/*//sidebar-wrapper*/}
 
-      <div class="main-wrapper" id="cv">
-        <section class="section summary-section">
-          <h2 class="section-title">
-            <span class="icon-holder">
+      <div className="main-wrapper" id="cv">
+        <section className="section summary-section">
+          <h1 className="section-title">
+            <span className="icon-holder">
               <Icons icon="user" />
             </span>
-            About me:
-          </h2>
-          <div class="meta">
-            <div class="upper-row">
-              <h3 class="job-title">Tomás Vásquez</h3>
-            </div>
-            {/*//upper-row*/}
-            <div class="company">Web Developer</div>
+            Tomas vasquez
+          </h1>
+          <div className="meta">
+            <div className="company">Summary</div>
           </div>
-          {/*//meta*/}
-
-          <div class="summary">
+          <div className="summary">
             <p>
-              My name is Tomás Vásquez and I am specialized in the development
-              and programming of web applications. I began my academic training
-              at the university studying Computer Science and later studying
-              self-taught in online education platforms, first in EDteam and
-              then in Platzi, which helped me to get work remotely and
-              eventually in companies like NetSoft, NullCode, Team and many
-              more. At this time I feel that the time has come to change of
-              scene and carry out a new work experience. Without a doubt, I
-              believe that your company is the perfect one to achieve it.
+              My name is Tomás Vásquez Quispe and I am specialized in the
+              development and programming of web applications. I began my
+              academic training at the university studying Informatics
+              Engineering and later studying self-taught in online education
+              platforms, first in EDteam and then in Platzi.
+              <br className="mb-1" /> I am currently looking to insert working
+              in the technology area. I am very self-taught and I constantly
+              look for new challenges that challenge my abilities and help me
+              grow.
             </p>
           </div>
-          {/*//summary*/}
         </section>
-        {/*//section*/}
 
-        <section class="section experiences-section">
-          <h2 class="section-title">
-            <span class="icon-holder">
+        <section className="section experiences-section">
+          <h2 className="section-title">
+            <span className="icon-holder">
               <Icons icon="briefcase" />
             </span>
             Experience:
           </h2>
 
-          <div class="item">
-            <div class="details">
+          <div className="item">
+            <div className="details">
               <p>(no experience working in companies)</p>
             </div>
           </div>
         </section>
 
-        <section class="section projects-section">
-          <h2 class="section-title">
-            <span class="icon-holder">
+        <section className="section projects-section">
+          <h2 className="section-title">
+            <span className="icon-holder">
               <Icons icon="archive" />
             </span>
             Personal projects:
           </h2>
-          <div class="intro">
+          <div>
+            <div className="item">
+              <span className="project-title">
+                <a href="/" target="_blank" rel="noreferrer">
+                  Open-Portafolio
+                </a>
+              </span>{" "}
+              -{" "}
+              <span className="project-tagline">
+                customizable professional portfolio made with the purpose of
+                helping my colleagues create their professional portfolio
+                quickly and easily. I used React, GetsbyJs, Github-Api,
+                react-particle-js and bootstrap,{" "}
+                <a href="https://github.com/tomasdetloging/OpenPortafolio">
+                  (get source)
+                </a>
+                .
+              </span>
+            </div>
+            <div className="item">
+              <span className="project-title">
+                <a
+                  href="https://open-academy.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Open-Academy
+                </a>
+              </span>{" "}
+              -{" "}
+              <span className="project-tagline">
+                basic skeleton to create an online education platform,
+                <br />
+                <a href="https://github.com/tomasdetloging/openacademy-nextjs">
+                  (get code from frontend)
+                </a>
+                ,{" "}
+                <a href="https://github.com/tomasdetloging/MyAcademy-Api">
+                  (get code from backend)
+                </a>
+                ,{" "}
+                <a href="https://github.com/tomasdetloging/OpenAcademy-ElectronAdmin">
+                  (get code from desktop aplication)
+                </a>
+                .
+              </span>
+            </div>
+            <div className="item">
+              <span className="project-title">
+                <a
+                  href="https://social-network-v123.vercel.app"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Social-Network-v123
+                </a>
+              </span>{" "}
+              -{" "}
+              <span className="project-tagline">
+                Social network in which I work with some friends, created with
+                the purpose of becoming an online education platform,{" "}
+                <a href="https://github.com/tomasdetloging/social-network-v123">
+                  (get code)
+                </a>
+                .
+              </span>
+            </div>
+          </div>{" "}
+          <div className="intro">
             <p>
-              You can see my personal projects on my personal website:
-              <br />
-              <a href="https://tomas-dev.vercel.app">
-                https://tomas-dev.vercel.app
-              </a>
-            </p>
-
-            <p>
-              Or direct from my Github repository:
-              <br />
-              <a href="https://github.com/tomasdetloging">
-                https://github.com/tomasdetloging
-              </a>
+              You can see all my personal projects on my personal website:{" "}
+              <a href="https://tomas-dev.vercel.app">https://tomas-dev.com</a>
             </p>
           </div>
         </section>
         {/*//section*/}
 
-        <section class="skills-section section">
-          <h2 class="section-title">
-            <span class="icon-holder">
+        <section className="skills-section section">
+          <h2 className="section-title">
+            <span className="icon-holder">
               <Icons icon="rocket" />
-              <i class="fas fa-rocket"></i>
+              <i className="fas fa-rocket"></i>
             </span>
-            Skills and competencies:
+            Technical knowledge:
           </h2>
-          <div class="skillset">
-            <br />
-            {/*//item*/}
-            <div class="item">
-              <h3 class="level-title">React</h3>
-              <div class="progress level-bar">
+          <div className="skillset">
+            <div className="item">
+              <h3 className="level-title">React</h3>
+              <div className="progress level-bar">
                 <div
-                  class="progress-bar theme-progress-bar"
-                  role="progressbar"
+                  className="progress-bar theme-progress-bar"
                   style={{ width: "90%" }}
                 ></div>
               </div>
             </div>
-            {/*//item*/}
-            <div class="item">
-              <h3 class="level-title">Angular</h3>
-              <div class="progress level-bar">
+
+            <div className="item">
+              <h3 className="level-title">Angular</h3>
+              <div className="progress level-bar">
                 <div
-                  class="progress-bar theme-progress-bar"
-                  role="progressbar"
+                  className="progress-bar theme-progress-bar"
                   style={{ width: "80%" }}
                 ></div>
               </div>
             </div>
-            {/*//item*/}
-            <div class="item">
-              <h3 class="level-title">VueJs</h3>
-              <div class="progress level-bar">
+
+            <div className="item">
+              <h3 className="level-title">Vue</h3>
+              <div className="progress level-bar">
                 <div
-                  class="progress-bar theme-progress-bar"
-                  role="progressbar"
-                  style={{ width: "70%" }}
-                ></div>
-              </div>
-            </div>
-            {/*//item*/}
-            <br />
-            {/*//item*/}
-            <div class="item">
-              <h3 class="level-title">NodeJs</h3>
-              <div class="progress level-bar">
-                <div
-                  class="progress-bar theme-progress-bar"
-                  role="progressbar"
-                  style={{ width: "80%" }}
-                ></div>
-              </div>
-            </div>
-            {/*//item*/}
-            <div class="item">
-              <h3 class="level-title">Php</h3>
-              <div class="progress level-bar">
-                <div
-                  class="progress-bar theme-progress-bar"
-                  role="progressbar"
+                  className="progress-bar theme-progress-bar"
                   style={{ width: "70%" }}
                 ></div>
               </div>
             </div>
 
-            {/*//item*/}
             <br />
-            {/*//item*/}
-            <div class="item">
-              <h3 class="level-title">MongoDB</h3>
-              <div class="progress level-bar">
+
+            <div className="item">
+              <h3 className="level-title">Node-js</h3>
+              <div className="progress level-bar">
                 <div
-                  class="progress-bar theme-progress-bar"
-                  role="progressbar"
-                  style={{ width: "70%" }}
+                  className="progress-bar theme-progress-bar"
+                  style={{ width: "85%" }}
                 ></div>
               </div>
             </div>
-            {/*//item*/}
-            <div class="item">
-              <h3 class="level-title">Mysql</h3>
-              <div class="progress level-bar">
+
+            <div className="item">
+              <h3 className="level-title">Php</h3>
+              <div className="progress level-bar">
                 <div
-                  class="progress-bar theme-progress-bar"
-                  role="progressbar"
+                  className="progress-bar theme-progress-bar"
+                  style={{ width: "60%" }}
+                ></div>
+              </div>
+            </div>
+
+            <div className="item">
+              <h3 className="level-title">MongoDB</h3>
+              <div className="progress level-bar">
+                <div
+                  className="progress-bar theme-progress-bar"
                   style={{ width: "80%" }}
+                ></div>
+              </div>
+            </div>
+
+            <div className="item">
+              <h3 className="level-title">Mysql</h3>
+              <div className="progress level-bar">
+                <div
+                  className="progress-bar theme-progress-bar"
+                  style={{ width: "70%" }}
                 ></div>
               </div>
             </div>
           </div>
         </section>
-        {/*//skills-section*/}
+
+        <section className="projects-section section mb-0">
+          <h2 className="section-title">
+            <span className="icon-holder">
+              <Icons icon="rocket" />
+              <i className="fas fa-rocket"></i>
+            </span>
+            Extra knowledge
+          </h2>
+
+          <div className="item">
+            <span className="project-title">
+              <a href="/" target="_blank" rel="noreferrer">
+                Git
+              </a>
+            </span>{" "}
+            -{" "}
+            <span className="project-tagline">
+              intermediate experience using to manage and deploy my personal
+              projects.
+            </span>
+          </div>
+          <div className="item">
+            <span className="project-title">
+              <a href="/" target="_blank" rel="noreferrer">
+                Linux
+              </a>
+            </span>{" "}
+            -{" "}
+            <span className="project-tagline">
+              Daily use of the terminal and the operating system usually.
+            </span>
+          </div>
+
+          <div className="item">
+            <span className="project-title">
+              <a href="/" target="_blank" rel="noreferrer">
+                Vim
+              </a>
+            </span>{" "}
+            -{" "}
+            <span className="project-tagline">
+              Favorite code editor that allows me to develop in a more agile and
+              fast way.
+            </span>
+          </div>
+
+          <div className="item">
+            <span className="project-title">
+              <a href="/" target="_blank" rel="noreferrer">
+                English
+              </a>
+            </span>{" "}
+            -{" "}
+            <span className="project-tagline">
+              Intermediate level. Daily use in reading books, documentation and
+              courses. Capacity to understand both oral and written, and to
+              maintain a conversation and socialize.
+            </span>
+          </div>
+        </section>
       </div>
       {/*//main-body*/}
     </div>

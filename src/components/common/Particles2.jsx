@@ -33,7 +33,7 @@ export default class particles extends Component {
         id="home"
         style={{
           zIndex: -100,
-          position: "absolute",
+          position: "fixed",
           height: `${this.state.height}px`,
           overflow: "hidden",
           width: "100%",

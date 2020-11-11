@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Particles from "react-particles-js";
 import Image from "gatsby-image";

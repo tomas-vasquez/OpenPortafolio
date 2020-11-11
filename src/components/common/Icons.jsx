@@ -13,8 +13,8 @@ import {
   faArchive,
   faBriefcase,
   faMapPin,
-  faDotCircle,
   faCircle,
+  faFile,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
@@ -35,6 +35,9 @@ import {
 
 const getIcon = (icon) => {
   switch (icon) {
+    case "file":
+      return faFile;
+
     case "dot":
       return faCircle;
 

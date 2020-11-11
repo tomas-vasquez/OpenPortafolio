@@ -57,6 +57,7 @@ export default function AboutMe() {
           role="button"
           aria-label="Learn more about me"
         >
+          <Icons icon="file" className="mr-2" />
           {aboutMeButtomText}
         </Link>
       </div>

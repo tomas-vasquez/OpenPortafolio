@@ -139,7 +139,7 @@
       display: inline-block;
       color: #fff;
       @include border-radius(50%);
-      background: darken($theme-color, 15%);
+      background: $theme-color;
       text-align: center;
       font-size: 16px;
       position: relative;
@@ -198,26 +198,42 @@
   }
 }
 
+
 .skillset {
-  .item {
-    margin-bottom: 15px;
-    overflow: hidden;
-  }
-  .level-title {
-    font-size: 14px;
-    margin-top: 0;
-    margin-bottom: 12px;
-  }
+    .item {
+        margin-bottom: 15px;
+        overflow: hidden;
+    }
+    .level-title {
+        font-size: 14px;
+        margin-top: 0;
+        margin-bottom: 12px;
+    }
+    
+    
+    .level-bar {
+        height: 12px;
+        background: $smoky-white;
+        @include border-radius(2px);
+    }
+    
+    .theme-progress-bar {
+	    background: lighten($theme-color, 10%);
+    }
+}
 
-  .level-bar {
-    height: 12px;
-    background: $smoky-white;
-    @include border-radius(2px);
-  }
 
-  .theme-progress-bar {
-    background: lighten($theme-color, 10%);
-  }
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    
+    .skillset .level-title {
+        display: inline-block;
+        float: left;
+        width: 30%;
+        margin-bottom: 0;
+    }
+    
+    
 }
 
 .footer {
