@@ -46,6 +46,10 @@ const SEO = ({ description, lang, meta, title }) => {
           content: title,
         },
         {
+          property: `og:image`,
+          content: "/og_image.png",
+        },
+        {
           property: `og:description`,
           content: metaDescription,
         },
