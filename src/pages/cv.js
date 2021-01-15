@@ -43,33 +43,35 @@ export default function cv() {
             </li>
             <li className="phone">
               <Icons icon="wathsapp" className="mr-3" />
-              <a href="https://api.whatsapp.com/send?phone=59177649384">
-                +591 77649384
+              <a href="https://api.whatsapp.com/send?phone=59162014913">
+                +591 62014913
               </a>
             </li>
             <li className="website">
               <Icons icon="hear" className="mr-3" />
-              <a href="https://tomas-dev.vercel.app">https://tomas-dev</a>
+              <a href="https://tomas-vasquez.vercel.app">
+                https://tomas-vasquez.com
+              </a>
             </li>
             <li className="linkedin">
               <Icons icon="linkedin" className="mr-3" />
 
               <a
-                href="https://www.linkedin.com/in/tomás-vásquez-8a45471b4"
+                href="https://www.linkedin.com/in/-tomas-vasquez-"
                 target="_blank"
                 rel="noreferrer"
               >
-                linkedin.com/tomas
+                /-tomas-vasquez-
               </a>
             </li>
             <li className="github">
               <Icons icon="github" className="mr-3" />
               <a
-                href="https://github.com/tomasdetloging"
+                href="https://github.com/tomas-vasquez"
                 target="_blank"
                 rel="noreferrer"
               >
-                github.com/tomas
+                /tomas-vasquez
               </a>
             </li>
             <li className="twitter">
@@ -143,11 +145,11 @@ export default function cv() {
           </div>
           <div className="summary">
             <p>
-              My name is Tomás Vásquez Quispe and I am specialized in the
-              development and programming of web applications. I began my
-              academic training at the university studying Informatics
-              Engineering and later studying self-taught in online education
-              platforms, first in EDteam and then in Platzi.
+              My name is Tomás Vásquez and I am specialized in the development
+              and programming of web applications. I began my academic training
+              at the university studying Informatics Engineering and later
+              studying self-taught in online education platforms, first in
+              EDteam and then in Platzi.
               <br className="mb-1" /> I am currently looking to insert working
               in the technology area. I am very self-taught and I constantly
               look for new challenges that challenge my abilities and help me
@@ -191,7 +193,7 @@ export default function cv() {
                 helping my colleagues create their professional portfolio
                 quickly and easily. I used React, GetsbyJs, Github-Api,
                 react-particle-js and bootstrap,{" "}
-                <a href="https://github.com/tomasdetloging/OpenPortafolio">
+                <a href="https://github.com/tomas-vasquez/OpenPortafolio">
                   (get source)
                 </a>
                 .
@@ -211,15 +213,15 @@ export default function cv() {
               <span className="project-tagline">
                 basic skeleton to create an online education platform,
                 <br />
-                <a href="https://github.com/tomasdetloging/openacademy-nextjs">
+                <a href="https://github.com/tomas-vasquez/openacademy-nextjs">
                   (get code from frontend)
                 </a>
                 ,{" "}
-                <a href="https://github.com/tomasdetloging/MyAcademy-Api">
+                <a href="https://github.com/tomas-vasquez/MyAcademy-Api">
                   (get code from backend)
                 </a>
                 ,{" "}
-                <a href="https://github.com/tomasdetloging/OpenAcademy-ElectronAdmin">
+                <a href="https://github.com/tomas-vasquez/OpenAcademy-ElectronAdmin">
                   (get code from desktop aplication)
                 </a>
                 .
@@ -239,7 +241,7 @@ export default function cv() {
               <span className="project-tagline">
                 Social network in which I work with some friends, created with
                 the purpose of becoming an online education platform,{" "}
-                <a href="https://github.com/tomasdetloging/social-network-v123">
+                <a href="https://github.com/tomas-vasquez/social-network-v123">
                   (get code)
                 </a>
                 .
@@ -249,7 +251,9 @@ export default function cv() {
           <div className="intro">
             <p>
               You can see all my personal projects on my personal website:{" "}
-              <a href="https://tomas-dev.vercel.app">https://tomas-dev.com</a>
+              <a href="https://tomas-vasquez.vercel.app">
+                https://tomas-vasquez.com
+              </a>
             </p>
           </div>
         </section>
